@@ -18,8 +18,6 @@ function App() {
   } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
-    console.log(data);
-
     try {
       const response = await fetch("http://localhost:4000/api/feedback", {
         method: "POST",
@@ -29,15 +27,17 @@ function App() {
         body: JSON.stringify(data),
       });
 
+      const result = await response.json();
+
       if (response.ok) {
         alert("Данные успешно отправлены!");
-        // reset(); // Очистить форму после успешной отправки
+        // reset(); // Раскомментируйте для очистки формы
       } else {
-        alert("Произошла ошибка при отправке данных.");
+        alert(`Ошибка: ${result.message || 'Произошла ошибка при отправке данных'}`);
       }
     } catch (error) {
       console.error("Ошибка:", error);
-      alert("Произошла ошибка при отправке данных!");
+      alert("Произошла ошибка при отправке данных! Проверьте консоль для деталей.");
     }
   };
 

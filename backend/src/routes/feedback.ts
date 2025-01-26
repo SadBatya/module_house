@@ -1,5 +1,6 @@
 import { Router, Request, Response } from "express";
 import nodemailer from "nodemailer";
+
 const router = Router();
 
 router.post("/", async (req: any, res: any) => {
@@ -12,9 +13,10 @@ router.post("/", async (req: any, res: any) => {
 
   // Настройка Nodemailer
   const transporter = nodemailer.createTransport({
-    service: "smtp.mail.ru",
+    service: "mail",
+    host: "smtp.mail.ru",
     port: 465,
-    secure: true, // Замените на свой email сервис, если нужно
+    secure: true,
     auth: {
       user: "sadbatya@mail.ru", // Ваш email
       pass: "4E1itKYxCp4s5hdBvBVu", // Пароль приложения или токен
