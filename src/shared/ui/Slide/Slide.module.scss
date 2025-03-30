@@ -1,0 +1,32 @@
+@import '@/styles/_variables.scss';
+
+.slide {
+  background-color: gray-opacity;
+
+  .grayBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $gray-opacity;
+    width: 9rem;
+    height: 49.3rem;
+    gap: 1rem;
+    cursor: pointer;
+
+    .title {
+      font-size: 1.6rem;
+      writing-mode: sideways-lr;
+    }
+
+    .line {
+      height: 6.4rem;
+      background: white;
+      width: 1px;
+    }
+
+    .number {
+      font-size: 4rem;
+    }
+  }
+}
