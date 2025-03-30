@@ -1,6 +1,7 @@
 @import '@/styles/_variables.scss';
 
 .slide {
+  display: flex;
   background-color: gray-opacity;
 
   .grayBlock {
@@ -17,6 +18,7 @@
     .title {
       font-size: 1.6rem;
       writing-mode: sideways-lr;
+      text-transform: uppercase;
     }
 
     .line {
@@ -29,4 +31,50 @@
       font-size: 4rem;
     }
   }
+
+  .inner {
+    display: flex;
+    position: relative;
+    max-height: 493px;
+    transition: 0.3s all;
+    .img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .info {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 1rem;
+      left: 2rem;
+      bottom: 2rem;
+
+      .title {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .line {
+          width: 6.4rem;
+          background-color: white;
+          height: 1px;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  width: 100%;
+  opacity: 1;
+}
+
+.notactive {
+  width: 0%;
+  opacity: 0;
 }

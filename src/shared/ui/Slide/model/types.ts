@@ -1,5 +1,5 @@
-export interface IHouses {
-  id: number;
+export interface Props {
+  num: number;
   text: string;
   description: string;
   img: string;
