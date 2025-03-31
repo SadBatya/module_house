@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Poppins, Inter } from 'next/font/google';
+import { Poppins, Inter, Gilroy } from 'next/font/google';
 import './globals.scss';
 import { Header } from '@/widgets/Header/Header';
 
