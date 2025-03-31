@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
-import { Poppins, Inter, Gilroy } from 'next/font/google';
+import { Poppins, Inter } from 'next/font/google';
 import './globals.scss';
 import { Header } from '@/widgets/Header/Header';
+import { Footer } from '@/widgets/Footer/Footer';
 
 const poppins = Poppins({
   variable: '--font-poppins',
@@ -29,6 +30,7 @@ export default function RootLayout({
         <div id="root">
           <Header />
           {children}
+          <Footer />
         </div>
       </body>
     </html>

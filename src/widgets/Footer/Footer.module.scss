@@ -1,0 +1,118 @@
+@import '@/styles/_variables.scss';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  .footer_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 1px solid $gray-opacity;
+    padding-top: 9rem;
+    color: $blue;
+    margin-bottom: 4.8rem;
+
+    .logo_inner {
+      .logo {
+      }
+
+      .text {
+        color: $black;
+        max-width: 24.1rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: var(--font-inter);
+      }
+    }
+
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      gap: 2.2rem;
+
+      .title {
+        font-weight: 500;
+        font-size: 1.8rem;
+      }
+
+      .list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .link {
+          font-size: 1.4rem;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 2.2rem;
+      .title {
+        font-weight: 500;
+        font-size: 1.8rem;
+      }
+
+      .list {
+        display: flex;
+        flex-direction: column;
+        gap: 2.2rem;
+
+        .link {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          font-size: 1.6rem;
+        }
+      }
+    }
+    .socials {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .map {
+      display: flex;
+      gap: 2.2rem;
+      flex-direction: column;
+
+      .title {
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+
+      .location {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .location_text {
+          font-size: 1.6rem;
+          font-weight: 600;
+        }
+      }
+
+      .address_text {
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+
+      .map_coordinates {
+        width: 281px;
+        height: 146px;
+        background-color: $black;
+      }
+    }
+  }
+  .rights {
+    color: $blue;
+    font-weight: 400;
+    padding: 5rem 0;
+    border-top: 1px solid $gray-opacity;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+}
