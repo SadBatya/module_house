@@ -36,7 +36,8 @@
     display: flex;
     position: relative;
     max-height: 493px;
-    transition: 0.3s all;
+    transition: 1s all;
+
     .img {
       width: 100%;
       height: auto;
@@ -70,11 +71,13 @@
 }
 
 .active {
+  max-width: 493px;
   width: 100%;
   opacity: 1;
 }
 
 .notactive {
+  max-width: 0px;
   width: 0%;
   opacity: 0;
 }
