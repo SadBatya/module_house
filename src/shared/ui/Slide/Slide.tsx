@@ -6,7 +6,7 @@ import style from './Slide.module.scss';
 import { Props } from './model/types';
 import clsx from 'clsx';
 
-export const Slide = ({ num, text, description, img }: Props) => {
+export const Slide = ({ num, text }: Props) => {
   const [open, setOpen] = useState(false);
 
   return (
