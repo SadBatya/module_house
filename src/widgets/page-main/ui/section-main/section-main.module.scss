@@ -5,6 +5,9 @@
   background-image: url('./assets/bg-main.png');
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   .left_section {
     max-width: 53rem;

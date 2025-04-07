@@ -1,5 +1,6 @@
 import style from './section-main.module.scss';
 import { Button } from '@/shared/ui/Button/Button';
+import { Carousel } from '@/widgets/Carousel';
 
 export const SectionMain = () => (
   <section className={style.main}>
@@ -20,5 +21,6 @@ export const SectionMain = () => (
       </ul>
       <Button>Выбрать дом</Button>
     </div>
+    <Carousel />
   </section>
 );

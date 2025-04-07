@@ -1,0 +1,28 @@
+.swiper_container {
+  max-width: 80rem;
+  position: relative;
+  .title {
+    margin-bottom: 2.2rem;
+  }
+
+  .swiper {
+  }
+
+  .button_prev {
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    background-image: url('./assets/arrow-left.svg');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+}
