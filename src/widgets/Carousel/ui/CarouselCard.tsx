@@ -20,6 +20,8 @@ export const CarouselCard = ({ description, title, bgImage }: Props) => (
   >
     <p className={style.description}>{description}</p>
     <h3 className={style.title}>{title}</h3>
-    <Button>Смотреть проекты</Button>
+    <Button px="1" py="1.7">
+      Смотреть проекты
+    </Button>
   </div>
 );
