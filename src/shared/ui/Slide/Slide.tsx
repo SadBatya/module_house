@@ -1,25 +1,20 @@
-'use client';
-
-import { useState } from 'react';
 import Image from 'next/image';
 import style from './Slide.module.scss';
 import { Props } from './model/types';
 import clsx from 'clsx';
 
-export const Slide = ({ num, text }: Props) => {
-  const [open, setOpen] = useState(false);
-
+export const Slide = ({ num, text, activeIndex, onClick }: Props) => {
   return (
-    <div className={style.slide}>
-      <div className={style.grayBlock} onClick={() => setOpen(!open)}>
+    <div className={style.slide} onClick={onClick}>
+      <div className={style.grayBlock}>
         <div className={style.title}>Дома из бревна</div>
         <div className={style.line} />
         <div className={style.number}>0{num}</div>
       </div>
       <div
         className={clsx(style.inner, {
-          [style.active]: open,
-          [style.notactive]: !open,
+          [style.active]: activeIndex === num,
+          [style.notactive]: activeIndex !== num,
         })}
       >
         <Image
@@ -33,7 +28,12 @@ export const Slide = ({ num, text }: Props) => {
           <div className={style.description}>
             Роскошный панорамный вид, тепло и энергоэффективность
           </div>
-          <div className={style.title}>
+          <div
+            className={clsx(style.title, {
+              [style.active]: activeIndex === num,
+              [style.notactive]: activeIndex !== num,
+            })}
+          >
             <div className={style.number}>0{num}</div>
             <div className={style.line} />
             <div className={style.title}>Дома из бревна</div>

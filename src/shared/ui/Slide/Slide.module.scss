@@ -2,7 +2,7 @@
 
 .slide {
   display: flex;
-  background-color: gray-opacity;
+  background-color: $gray-opacity;
 
   .grayBlock {
     display: flex;
@@ -14,6 +14,7 @@
     height: 49.3rem;
     gap: 1rem;
     cursor: pointer;
+    color: black;
 
     .title {
       font-size: 1.6rem;
@@ -23,7 +24,7 @@
 
     .line {
       height: 6.4rem;
-      background: white;
+      background: black;
       width: 1px;
     }
 
@@ -37,11 +38,13 @@
     position: relative;
     max-height: 493px;
     transition: 1s all;
+    overflow: hidden;
 
     .img {
       width: 100%;
       height: auto;
       object-fit: cover;
+      width: 764px;
       object-position: center;
     }
 
@@ -55,10 +58,20 @@
       left: 2rem;
       bottom: 2rem;
 
+      .description {
+        font-size: 1.5rem;
+        font-weight: 300;
+        transition: opacity 0.6s ease;
+        opacity: 0;
+      }
+
       .title {
         display: flex;
         align-items: center;
         gap: 1rem;
+        font-size: 3rem;
+        transition: opacity 0.6s ease;
+        opacity: 0;
 
         .line {
           width: 6.4rem;
@@ -67,17 +80,29 @@
         }
       }
     }
+
+    &.active {
+      max-width: 764px;
+      width: 100%;
+      opacity: 1;
+
+      .info {
+        .description {
+          transition-delay: 0.3s;
+          opacity: 1;
+        }
+
+        .title {
+          transition-delay: 0.6s;
+          opacity: 1;
+        }
+      }
+    }
+
+    &.notactive {
+      max-width: 0px;
+      width: 0%;
+      opacity: 0;
+    }
   }
-}
-
-.active {
-  max-width: 493px;
-  width: 100%;
-  opacity: 1;
-}
-
-.notactive {
-  max-width: 0px;
-  width: 0%;
-  opacity: 0;
 }

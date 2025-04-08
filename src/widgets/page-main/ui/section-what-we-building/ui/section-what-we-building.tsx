@@ -1,9 +1,10 @@
 import { Accordion } from '@/widgets/Accordion';
-import { Title } from '@/shared/ui/Title/Title';
+import { Title } from '@/shared/ui';
+import { Section } from '@/shared/ui';
 
 export const SectionWhatWeBuilding = () => (
-  <section>
+  <Section>
     <Title>Что мы строим?</Title>
     <Accordion />
-  </section>
+  </Section>
 );
