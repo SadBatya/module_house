@@ -22,7 +22,7 @@
     pointer-events: none;
   }
   .left_section {
-    max-width: 53rem;
+    max-width: 58rem;
 
     .title {
       font-size: 4rem;
@@ -36,6 +36,12 @@
       gap: 2.3rem;
       font-size: 15px;
       margin-bottom: 5.9rem;
+      padding-left: 2rem;
+
+      .list_inner {
+        list-style: disc;
+        list-style-position: outside;
+      }
     }
   }
 }
