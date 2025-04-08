@@ -9,6 +9,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  max-width: 1920px;
 
   &::after {
     z-index: 20;
@@ -16,7 +17,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 20rem;
+    width: 40rem;
     height: 100%;
     background: linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent);
     pointer-events: none;
