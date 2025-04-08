@@ -8,7 +8,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
+  &::after {
+    z-index: 20;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20rem;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent);
+    pointer-events: none;
+  }
   .left_section {
     max-width: 53rem;
 
