@@ -1,0 +1,42 @@
+@import '@/styles/_variables.scss';
+
+.swiperCard {
+  max-width: 28rem;
+  color: black;
+
+  .img {
+    margin-bottom: 1.2rem;
+  }
+  .title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+
+    .list_item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+
+      .list_marker {
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: $orange;
+        border-radius: 0.4rem;
+      }
+    }
+  }
+  .description {
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+  }
+}

@@ -1,19 +1,37 @@
 import style from './SwiperCard.module.scss';
 import { Button } from '@/shared/ui';
+import Image, { type StaticImageData } from 'next/image';
 
-export const SwiperCard = () => (
+interface Props {
+  img: StaticImageData;
+  title?: string;
+  time?: string;
+  price?: string;
+  description: string;
+}
+
+export const SwiperCard = ({ img, title, time, price, description }: Props) => (
   <div className={style.swiperCard}>
-    <h3 className={style.title}>Одноэтажный мини-дом 4*8 с террасой 3*8м</h3>
+    <Image
+      className={style.img}
+      src={img}
+      alt="home"
+      width={283}
+      height={280}
+    />
+    <h3 className={style.title}>{title}</h3>
     <ul className={style.list}>
       <li className={style.list_item}>
-        <span className={style.list_marker} />4 недели
+        <span className={style.list_marker} />
+        {time}
       </li>
       <li className={style.list_item}>
         <span className={style.list_marker} />
-        1’882’486 руб с отделкой
+        {price}
       </li>
     </ul>
-    <Button py="1.2" px="3.6">
+    <p className={style.description}>{description}</p>
+    <Button py="1.2" px="3.6" fz="1.6" fw="400">
       Подробнее
     </Button>
   </div>
