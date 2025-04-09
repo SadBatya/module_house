@@ -39,10 +39,10 @@ export const SwiperCatalog = () => {
       <div className={style.buttons}>
         <button
           className={style.button_prev}
-          onClick={() => swiperRef.current?.slideNext()}
+          onClick={() => swiperRef.current?.slidePrev()}
         />
         <button
-          className={style.button_prev}
+          className={style.button_next}
           onClick={() => swiperRef.current?.slideNext()}
         />
       </div>

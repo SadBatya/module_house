@@ -1,0 +1,12 @@
+.subsection {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+
+  .text {
+    color: black;
+    opacity: 50%;
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+}
