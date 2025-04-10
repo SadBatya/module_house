@@ -1,0 +1,51 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 9.5rem;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    gap: 5rem;
+    max-width: 23rem;
+
+    .icon {
+    }
+    .description {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 1rem;
+  
+  height: 23rem;
+  padding-right: 4rem;
+  position: relative;
+
+  .img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    transform: translateX(-9rem) translateY(-1rem);
+  }
+
+  .description {
+    margin-left: auto;
+    margin-right: 10rem;
+    max-width: 46.5rem;
+    color: black;
+    font-size: 2rem;
+  }
+}
