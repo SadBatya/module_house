@@ -1,6 +1,7 @@
 import { SectionMain } from '@/widgets/page-main';
 import { SectionWhatWeBuilding } from '@/widgets/page-main';
 import { SectionCatalog } from '@/widgets/page-main';
+import { SectionPromoProject } from '@/widgets/page-main';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <SectionMain />
       <SectionWhatWeBuilding />
       <SectionCatalog />
+      <SectionPromoProject />
     </div>
   );
 }

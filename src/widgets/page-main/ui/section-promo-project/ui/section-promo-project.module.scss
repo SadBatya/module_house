@@ -1,0 +1,66 @@
+@import '@/styles/_variables.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+
+  .card {
+    max-width: 28rem;
+    color: black;
+
+    .name {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2.5rem;
+
+      .model {
+        font-size: 2.5rem;
+        font-weight: 500;
+      }
+
+      .size {
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-wrap: nowrap;
+        padding-top: 0.6rem;
+        opacity: 50%;
+      }
+    }
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+
+      .list_item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: black;
+
+        .list_marker {
+          display: block;
+          width: 1.5rem;
+          height: 1.5rem;
+          background-color: $orange;
+          border-radius: 0.4rem;
+        }
+      }
+    }
+    .description {
+      font-size: 1.6rem;
+      font-weight: 400;
+      margin-bottom: 5rem;
+      opacity: 70%;
+    }
+  }
+
+  .img {
+    width: 65%;
+    height: auto;
+    position: absolute;
+    right: 0;
+  }
+}

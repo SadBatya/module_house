@@ -6,19 +6,44 @@ interface Props {
   py?: string;
   fz?: string;
   fw?: string;
+  wf?: boolean;
   children: string;
   transparent?: boolean;
 }
 
-export const Button = ({ children, px, py, fz, fw, transparent }: Props) => (
-  <button
-    className={clsx(style.button, transparent && style.transparent)}
-    style={{
-      padding: `${py}rem ${px}rem`,
-      fontSize: `${fz}rem`,
-      fontWeight: `${fw}`,
-    }}
-  >
-    {children}
-  </button>
-);
+export const Button = ({
+  children,
+  px,
+  py,
+  fz,
+  fw,
+  transparent,
+  wf,
+}: Props) => {
+  const styleObj: React.CSSProperties = {};
+
+  if (px || py) {
+    styleObj.padding = `${py ?? 0}rem ${px ?? 0}rem`;
+  }
+
+  if (fz) {
+    styleObj.fontSize = `${fz}rem`;
+  }
+
+  if (fw) {
+    styleObj.fontWeight = fw;
+  }
+
+  return (
+    <button
+      className={clsx(
+        style.button,
+        transparent && style.transparent,
+        wf && style.width_full
+      )}
+      style={styleObj}
+    >
+      {children}
+    </button>
+  );
+};
