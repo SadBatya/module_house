@@ -1,0 +1,127 @@
+.description {
+  font-size: 2rem;
+  font-weight: 400;
+  color: black;
+  opacity: 50%;
+  max-width: 65.2rem;
+  margin-bottom: 4rem;
+}
+
+.nav {
+  .nav_list {
+    display: flex;
+    gap: 3.2rem;
+    margin-bottom: 6rem;
+  }
+
+  .nav_btn {
+    font-weight: 600;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+
+    line-height: 140%;
+    opacity: 50%;
+    transition: 0.3s all;
+
+    &:hover {
+      opacity: 100%;
+    }
+  }
+
+  .nav_btn_active {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    opacity: 100%;
+  }
+}
+
+.house_container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .house_img {
+    max-width: 120rem;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .block {
+    position: absolute;
+    top: 10%;
+    right: -10%;
+  }
+  .block_2 {
+    position: absolute;
+    top: 72%;
+    right: -8%;
+    .block_inner {
+      .line {
+        .line_inner {
+          width: 30rem;
+        }
+      }
+    }
+  }
+  .block_3 {
+    position: absolute;
+    top: 30%;
+    left: -10%;
+
+
+    .block_inner {
+      .line{
+        left: 110%;
+        .line_inner{
+          width: 30rem;
+          .dote{
+            left: auto;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .block_inner {
+    position: relative;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: black;
+      }
+    }
+
+    .line {
+      position: absolute;
+      right: 110%;
+      top: 15%;
+
+      .line_inner {
+        width: 18rem;
+        height: 0.1rem;
+        background-color: black;
+        position: relative;
+
+        .dote {
+          position: absolute;
+          display: block;
+          width: 0.5rem;
+          height: 0.5rem;
+          background-color: black;
+          border-radius: 100%;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
