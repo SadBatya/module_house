@@ -1,7 +1,7 @@
 import { Section } from '@/shared/ui';
 import { Title } from '@/shared/ui';
 import Image, { StaticImageData } from 'next/image';
-import style from './section-about.module.scss';
+import style from './ImgWithText.module.scss';
 
 interface Props {
   title: string;

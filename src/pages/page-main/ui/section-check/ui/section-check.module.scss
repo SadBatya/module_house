@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  align-items: flex-end;
+  .info {
+    max-width: 54rem;
+
+    .description {
+      margin-bottom: 12rem;
+    }
+  }
+  .img {
+    max-width: 68.8rem;
+    position: absolute;
+    right: 0;
+    height: auto;
+  }
+}

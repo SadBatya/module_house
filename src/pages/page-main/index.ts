@@ -6,3 +6,5 @@ export { SectionAbout } from './ui/section-about/ui/section-about';
 export { SectionGuarantee } from './ui/section-guarantee';
 export { SectionStructureHouse } from './ui/section-structure-house';
 export { SectionSteps } from './ui/section-steps/ui/section-steps';
+export { SectionControl } from './ui/section-control/ui/section-control';
+export { SectionCheck } from './ui/section-check/ui/section-check';
