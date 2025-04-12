@@ -1,41 +1,26 @@
-.container_text {
-  max-width: 60rem;
+@import '@/styles/_variables.scss';
 
-  .list {
-    .list_item {
-      display: flex;
-      gap: 2rem;
+.inner {
+  display: flex;
+  justify-content: space-between;
 
-      .text {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        cursor: pointer;
-        transition: all 0.5s;
+  .container_text {
+    max-width: 60rem;
+    flex: 1;
 
-        &:hover {
-          .description {
-            max-height: 30rem;
-            height: 100%;
-            opacity: 50;
-          }
-        }
-
-        .title {
-          color: black;
-          font-size: 2.5rem;
-          font-weight: 400;
-        }
-
-        .description {
-          transition: all 0.5s;
-          height: 0%;
-          max-height: 0px;
-          opacity: 0;
-          pointer-events: none;
-          padding-bottom: 2rem;
-        }
-      }
+    .grayBlock {
+      color: black;
+      font-size: 2rem;
+      background-color: $gray-opacity;
+      padding: 3rem;
+      border-radius: 1.2rem;
     }
+  }
+
+  .img {
+    position: absolute;
+    right: 0;
+    max-width: 72.9rem;
+    height: auto;
   }
 }
