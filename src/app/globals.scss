@@ -1,5 +1,4 @@
 @use '../styles/mixins' as *;
-@use '../styles/variables' as *;
 
 * {
   box-sizing: border-box;
@@ -19,4 +18,8 @@ html {
 body {
   color: white;
   font-family: var(--font-poppins);
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
 }

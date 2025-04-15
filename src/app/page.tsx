@@ -8,6 +8,8 @@ import { SectionStructureHouse } from '@/pages/page-main';
 import { SectionSteps } from '@/pages/page-main';
 import { SectionControl } from '@/pages/page-main';
 import { SectionCheck } from '@/pages/page-main';
+import { SectionOurProject } from '@/pages/page-main/ui/section-our-project/section-our-project';
+import { SectionCheckPrice } from '@/pages/page-main';
 
 export default function Home() {
   return (
@@ -22,6 +24,8 @@ export default function Home() {
       <SectionSteps />
       <SectionControl />
       <SectionCheck />
+      <SectionOurProject />
+      <SectionCheckPrice />
     </div>
   );
 }

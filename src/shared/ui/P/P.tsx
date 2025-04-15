@@ -1,10 +1,17 @@
 import clsx from 'clsx';
 import style from './P.style.module.scss';
+import { type ReactNode } from 'react';
 
 export const P = ({
   children,
   className,
+  center,
 }: {
-  children: string;
+  children: string | ReactNode;
   className?: string | string[];
-}) => <p className={clsx(style.description, className)}>{children}</p>;
+  center?: boolean;
+}) => (
+  <p className={clsx(style.description, className, center && style.center)}>
+    {children}
+  </p>
+);
