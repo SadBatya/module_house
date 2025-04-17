@@ -1,0 +1,23 @@
+.input_container {
+  display: flex;
+  flex-direction: column;
+  max-width: 34rem;
+
+  .label {
+    font-size: 2rem;
+    color: $black;
+    position: relative;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+
+    &::after {
+      content: '*';
+      color: $red;
+    }
+  }
+
+  .input {
+    font-size: 1.6rem;
+    padding: 1.6rem 2rem;
+  }
+}

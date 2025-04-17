@@ -9,6 +9,7 @@ interface Props {
   wf?: boolean;
   children: string;
   transparent?: boolean;
+  className?: string;
 }
 
 export const Button = ({
@@ -19,6 +20,7 @@ export const Button = ({
   fw,
   transparent,
   wf,
+  className,
 }: Props) => {
   const styleObj: React.CSSProperties = {};
 
@@ -39,7 +41,8 @@ export const Button = ({
       className={clsx(
         style.button,
         transparent && style.transparent,
-        wf && style.width_full
+        wf && style.width_full,
+        className
       )}
       style={styleObj}
     >
