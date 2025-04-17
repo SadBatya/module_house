@@ -11,6 +11,15 @@
     "check": "prettier --check \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
     "prepare": "husky"
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,scss,md}": [
+      "prettier --write"
+    ]
+  },
   "dependencies": {
     "@types/swiper": "^6.0.0",
     "clsx": "^2.1.1",
@@ -26,10 +35,11 @@
     "@types/react-dom": "^19",
     "eslint": "^9.23.0",
     "eslint-config-next": "15.2.4",
-    "eslint-config-prettier": "^10.1.1",
+    "eslint-config-prettier": "^10.1.2",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-prettier": "^5.2.5",
     "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
     "prettier": "^3.5.3",
     "sass": "^1.86.0",
     "typescript": "^5"
