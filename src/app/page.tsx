@@ -1,15 +1,15 @@
-import { SectionMain } from '@/pages/page-main';
-import { SectionWhatWeBuilding } from '@/pages/page-main';
-import { SectionCatalog } from '@/pages/page-main';
-import { SectionPromoProject } from '@/pages/page-main';
-import { SectionAbout } from '@/pages/page-main';
-import { SectionGuarantee } from '@/pages/page-main';
-import { SectionStructureHouse } from '@/pages/page-main';
-import { SectionSteps } from '@/pages/page-main';
-import { SectionControl } from '@/pages/page-main';
-import { SectionCheck } from '@/pages/page-main';
-import { SectionOurProject } from '@/pages/page-main/ui/section-our-project/section-our-project';
-import { SectionCheckPrice } from '@/pages/page-main';
+import { SectionMain } from '@/page/page-main';
+import { SectionWhatWeBuilding } from '@/page/page-main';
+import { SectionCatalog } from '@/page/page-main';
+import { SectionPromoProject } from '@/page/page-main';
+import { SectionAbout } from '@/page/page-main';
+import { SectionGuarantee } from '@/page/page-main';
+import { SectionStructureHouse } from '@/page/page-main';
+import { SectionSteps } from '@/page/page-main';
+import { SectionControl } from '@/page/page-main';
+import { SectionCheck } from '@/page/page-main';
+import { SectionOurProject } from '@/page/page-main/ui/section-our-project/section-our-project';
+import { SectionCheckPrice } from '@/page/page-main';
 
 export default function Home() {
   return (
