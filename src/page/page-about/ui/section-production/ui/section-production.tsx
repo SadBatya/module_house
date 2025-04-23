@@ -18,7 +18,9 @@ export const SectionProduction = () => (
             height={520}
             className={style.img}
           />
-          <p className={style.description}>{title}</p>
+          <p className={style.title}>
+            {index + 1}.{title}
+          </p>
         </div>
       ))}
     </div>
