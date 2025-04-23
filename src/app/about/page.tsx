@@ -1,9 +1,12 @@
-import { SectionCompany } from '@/page/page-about/ui/section-company/ui/section-company';
+import { SectionProduction } from '@/page/page-about/ui/section-production';
+import { SectionCompany } from '@/page/page-about/ui/section-company';
+
 
 export default function About() {
   return (
     <>
       <SectionCompany />
+      <SectionProduction />
     </>
   );
 }

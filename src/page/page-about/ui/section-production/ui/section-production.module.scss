@@ -1,0 +1,54 @@
+.title {
+  .color {
+    color: $orange;
+    font-size: 5rem;
+    font-weight: 500;
+    margin-left: 8px;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(56rem, 1fr));
+  gap: 2rem;
+
+  .imgContainer {
+    position: relative;
+    .img {
+      background-color: black;
+      width: 100%;
+      height: 52rem;
+      object-fit: cover;
+      border-radius: 1rem;
+      opacity: 1;
+      transform: scale(1);
+      transition:
+              opacity 0.3s ease 0.1s,
+              transform 0.3s;
+    }
+    .description {
+      color: white;
+      font-size: 2rem;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.8;
+      transition:
+              all 1s ease 0.2s;
+    }
+    &:hover {
+      .img {
+        opacity: 0.7;
+        transform: scale(1.05);
+      }
+      .description {
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 1;
+      }
+    }
+  }
+
+
+}

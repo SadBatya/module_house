@@ -6,7 +6,7 @@ import { Section } from '@/shared/ui';
 export const SectionCompany = () => (
   <Section className={style.section}>
     <div className={style.sectionLeft}>
-      <Title uppercase className={style.title}>
+      <Title uppercase >
         Компания <br />
         <span className={style.title_color}>«МЫ ДОМА»</span>
       </Title>
