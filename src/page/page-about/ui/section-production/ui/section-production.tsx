@@ -1,28 +1,26 @@
 import Image from 'next/image';
 import style from './section-production.module.scss';
-import  { productData } from './assets/data';
+import { cardData } from '@/page/page-about/ui/section-production/model/data';
 import { Section, Title } from '@/shared/ui';
 
 export const SectionProduction = () => (
   <Section>
     <Title uppercase className={style.title}>
-      НАше <span className={style.color}>ПРОИЗВОДСТВО</span>
+      Наше <span className={style.color}>производство</span>
     </Title>
     <div className={style.container}>
-      {productData.map((item, index) => (
-
+      {cardData.map(({ title, img }, index) => (
         <div key={index} className={style.imgContainer}>
-            <Image
-              src={`/images/about/${item.img}`}
-              alt={item.description}
-              width={560}
-              height={520}
-              className={style.img}
-            />
-            <p className={style.description}>{item.description}</p>
+          <Image
+            src={img}
+            alt={title}
+            width={560}
+            height={520}
+            className={style.img}
+          />
+          <p className={style.description}>{title}</p>
         </div>
       ))}
     </div>
-
-    </Section>
+  </Section>
 );
