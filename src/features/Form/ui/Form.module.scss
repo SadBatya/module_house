@@ -1,0 +1,16 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+  color: $black;
+
+  .btn {
+    margin-top: 10rem;
+  }
+
+  .subtext {
+    font-size: 1.2rem;
+    max-width: 48rem;
+  }
+}
