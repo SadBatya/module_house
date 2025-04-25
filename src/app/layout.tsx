@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className={`${poppins.variable} ${inter.variable}`}>
         <div id="root">
           <Header />
-          {children}
+          {children} 
           <Footer />
         </div>
       </body>
