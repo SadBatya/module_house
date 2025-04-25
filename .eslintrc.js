@@ -1,10 +1,12 @@
 module.exports = {
   extends: [
+    'next/core-web-vitals',
     'eslint:recommended',
     'plugin:react/recommended',
-    'plugin:prettier/recommended', // Это включает Prettier в конфигурацию ESLint
+    'plugin:@typescript-eslint/recommended',
+    'prettier', // Это включает Prettier в конфигурацию ESLint
   ],
-  plugins: ['react', 'import'],
+  plugins: ['react', 'import', '@typescript-eslint'],
   rules: {
     // Правило для пробела между импортами и компонентами
     'import/order': [
