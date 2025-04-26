@@ -1,5 +1,1 @@
-export const SectionReviews = () =>  (
-  <div>
-    
-  </div>
-)
+export const SectionReviews = () => <div></div>;
