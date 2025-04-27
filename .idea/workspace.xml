@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="688969f8-db23-43c8-934e-4b2df8177625" name="Changes" comment="feat: ts lint" />
+    <list default="true" id="688969f8-db23-43c8-934e-4b2df8177625" name="Changes" comment="feat: ts lint">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-license/ui/section-license.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-license/ui/section-license.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-license/ui/section-license.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-license/ui/section-license.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_variables.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +48,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -121,7 +129,8 @@
       <workItem from="1745623597509" duration="1596000" />
       <workItem from="1745625322117" duration="56000" />
       <workItem from="1745625385706" duration="56000" />
-      <workItem from="1745625445784" duration="1082000" />
+      <workItem from="1745625445784" duration="698000" />
+      <workItem from="1745628060689" duration="1615000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1745597857336</created>
@@ -166,11 +175,11 @@
       <updated>1745604136244</updated>
     </task>
     <task id="LOCAL-00007" summary="feat: ts lint">
-      <created>1745626790542</created>
+      <created>1745627654258</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1745626790542</updated>
+      <updated>1745627654258</updated>
     </task>
     <option name="localTasksCounter" value="8" />
     <servers />

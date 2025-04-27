@@ -1,3 +1,4 @@
+'use client';
 import { Section } from '@/shared/ui';
 import style from './section-license.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,7 +8,7 @@ export const SectionLicense = () => {
     <Section className={style.section}>
       <Swiper
         spaceBetween={50}
-        slidesPerView={3}
+        slidesPerView={4}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
