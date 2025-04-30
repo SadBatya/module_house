@@ -1,32 +1,87 @@
+'use client';
 import style from './Header.module.scss';
 import Image from 'next/image';
+import Link from 'next/link';
+import { externalRoutes, internalRoutes } from '@/shared/routes';
+import { useState } from 'react';
+import clsx from 'clsx';
+import { useBodyScrollLock } from '@/shared/hooks/useBodyScrollLock';
 
-export const Header = () => (
-  <header className={style.header}>
-    <div className={style.header_inner}>
-      <Image
-        className={style.logo}
-        src="/icons/logo.svg"
-        width={121}
-        height={48}
-        alt="logo"
-      />
-      <nav className={style.navigation}>
-        <ul className={style.list}>
-          <li className={style.link}>Проекты</li>
-          <li className={style.link}>О нас</li>
-          <li className={style.link}>Обратная связь</li>
-        </ul>
-      </nav>
-      <div className={style.contact}>
-        <Image
-          src="/icons/whatsapp.svg"
-          width={24}
-          height={24}
-          alt="whatsapp"
-        />
-        <span className={style.phone}>+7 999 999 99 99</span>
+export const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useBodyScrollLock(menuOpen);
+
+  return (
+    <header className={style.header}>
+      <div className={style.header_inner}>
+        <Link href={internalRoutes.home}>
+          <Image
+            className={style.logo}
+            src="/icons/logo.svg"
+            width={121}
+            height={48}
+            alt="logo"
+          />
+        </Link>
+
+        <nav className={style.navigation}>
+          <ul className={style.list}>
+            <Link href={internalRoutes.projects} className={style.link}>
+              Проекты
+            </Link>
+            <Link href={internalRoutes.about} className={style.link}>
+              О нас
+            </Link>
+            <Link href={internalRoutes.feedback} className={style.link}>
+              Обратная связь
+            </Link>
+          </ul>
+        </nav>
+        <Link
+          href={externalRoutes.telegram}
+          target="_blank"
+          className={style.contact}
+        >
+          <Image
+            src="/icons/telegram.svg"
+            width={35}
+            height={35}
+            alt="whatsapp"
+          />
+          <span className={style.phone}>+7 999 999 99 99</span>
+        </Link>
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className={clsx(
+            style.burger_button,
+            menuOpen && style.burger_button_active
+          )}
+        >
+          <span className={style.burger_line} />
+        </button>
+        <div
+          className={clsx(
+            style.burger_menu,
+            menuOpen && style.burger_menu_open
+          )}
+        >
+          <nav className={style.nav_list}>
+            <ul className={style.list_inner}>
+              <Link href={internalRoutes.projects} className={style.list_item}>
+                Проекты
+              </Link>
+              <Link href={internalRoutes.about} className={style.list_item}>
+                О нас
+              </Link>
+              <Link href={internalRoutes.feedback} className={style.list_item}>
+                Обратная связь
+              </Link>
+              <li className={style.list_item}></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
-  </header>
-);
+    </header>
+  );
+};
