@@ -1,3 +1,5 @@
+import { PHONE, EMAIL, TELEGRAM } from '../consts/consts';
+
 export const INTERNAL_ROUTES = {
   HOME: '/',
   ABOUT: '/about',
@@ -6,6 +8,8 @@ export const INTERNAL_ROUTES = {
 };
 
 export const EXTERNAL_ROUTES = {
-  TELEGRAM: 'https://t.me/sadbatya',
-  WHATSAPP: 'https://wa.me/+99999999999',
+  TELEGRAM: `https://t.me/${TELEGRAM}`,
+  WHATSAPP: `https://wa.me/${PHONE}`,
+  EMAIL: `https://wa.me/${EMAIL}`,
+  PHONE: `tel:${PHONE}`,
 };

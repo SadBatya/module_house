@@ -13,7 +13,7 @@ import { SectionCheckPrice } from '@/page/page-main';
 
 export default function Home() {
   return (
-    <div>
+    <>
       <SectionMain />
       <SectionWhatWeBuilding />
       <SectionCatalog />
@@ -26,6 +26,6 @@ export default function Home() {
       <SectionCheck />
       <SectionOurProject />
       <SectionCheckPrice />
-    </div>
+    </>
   );
 }

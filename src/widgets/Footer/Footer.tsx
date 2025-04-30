@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { getFullYear } from '@/shared/utils/getFullYear';
 import { TelegramIcon, WhatsAppIcon } from '@/shared/ui';
+import { PHONE } from '@/shared/consts/consts';
+import { EXTERNAL_ROUTES } from '@/shared/routes';
 
 export const Footer = () => {
   const year = getFullYear();
@@ -13,7 +15,7 @@ export const Footer = () => {
         <div className={style.logo_inner}>
           <Image
             className={style.logo}
-            src="/icons/logo.svg"
+            src="/icons/logo-footer.svg"
             width={295}
             height={117}
             alt="logo"
@@ -34,7 +36,11 @@ export const Footer = () => {
         <div className={style.contacts}>
           <h4 className={style.title}>Контакты</h4>
           <ul className={style.list}>
-            <Link href={'/'} className={style.link}>
+            <Link
+              href={EXTERNAL_ROUTES.PHONE}
+              target="_blank"
+              className={style.link}
+            >
               <Image
                 className={style.icon}
                 src="/icons/phone.svg"
@@ -42,9 +48,13 @@ export const Footer = () => {
                 width={30}
                 height={30}
               />
-              <span className={style.phone}>123 456 789</span>
+              <span className={style.phone}>{PHONE}</span>
             </Link>
-            <Link href={'/'} className={style.link}>
+            <Link
+              href={EXTERNAL_ROUTES.EMAIL}
+              target="_blank"
+              className={style.link}
+            >
               <Image
                 className={style.icon}
                 src="/icons/mail.svg"
@@ -59,10 +69,10 @@ export const Footer = () => {
         <div className={style.socials}>
           <h4 className={style.title}>Социальные сети</h4>
           <ul className={style.socials_link}>
-            <Link href={''}>
+            <Link href={EXTERNAL_ROUTES.WHATSAPP}>
               <WhatsAppIcon className={style.social_icon} />
             </Link>
-            <Link href={''}>
+            <Link href={EXTERNAL_ROUTES.TELEGRAM}>
               <TelegramIcon className={style.social_icon} />
             </Link>
           </ul>
