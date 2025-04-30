@@ -138,6 +138,9 @@
           gap: 1rem;
 
           .list_item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
             color: $white;
             font-size: 2rem;
             color: $orange;

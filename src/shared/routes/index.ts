@@ -1,10 +1,10 @@
-export const internalRoutes = {
-  home: '/',
-  about: '/about',
-  projects: '/projects',
-  feedback: '/feedback',
+export const INTERNAL_ROUTES = {
+  HOME: '/',
+  ABOUT: '/about',
+  PROJECTS: '/projects',
+  FEEDBACK: '/feedback',
 };
 
-export const externalRoutes = {
-  telegram: 'https://t.me/sadbatya',
+export const EXTERNAL_ROUTES = {
+  TELEGRAM: 'https://t.me/sadbatya',
 };
