@@ -7,4 +7,5 @@ export const INTERNAL_ROUTES = {
 
 export const EXTERNAL_ROUTES = {
   TELEGRAM: 'https://t.me/sadbatya',
+  WHATSAPP: 'https://wa.me/+99999999999',
 };

@@ -2,6 +2,7 @@ import style from './Footer.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getFullYear } from '@/shared/utils/getFullYear';
+import { TelegramIcon, WhatsAppIcon } from '@/shared/ui';
 
 export const Footer = () => {
   const year = getFullYear();
@@ -38,8 +39,8 @@ export const Footer = () => {
                 className={style.icon}
                 src="/icons/phone.svg"
                 alt="phone"
-                width={24}
-                height={24}
+                width={30}
+                height={30}
               />
               <span className={style.phone}>123 456 789</span>
             </Link>
@@ -48,8 +49,8 @@ export const Footer = () => {
                 className={style.icon}
                 src="/icons/mail.svg"
                 alt="mail"
-                width={24}
-                height={24}
+                width={30}
+                height={30}
               />
               <span className={style.phone}>hello@мыдома.рф</span>
             </Link>
@@ -59,21 +60,10 @@ export const Footer = () => {
           <h4 className={style.title}>Социальные сети</h4>
           <ul className={style.socials_link}>
             <Link href={''}>
-              <Image
-                className={style.social_icon}
-                src="/icons/telegram.svg"
-                width={25}
-                height={25}
-                alt="telgram"
-              />
+              <WhatsAppIcon className={style.social_icon} />
             </Link>
             <Link href={''}>
-              <Image
-                src="/icons/whatsapp.svg"
-                width={25}
-                height={25}
-                alt="whatsapp"
-              />
+              <TelegramIcon className={style.social_icon} />
             </Link>
           </ul>
         </div>

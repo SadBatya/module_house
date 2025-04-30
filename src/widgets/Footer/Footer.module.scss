@@ -41,6 +41,7 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
+
         .link {
           font-size: 1.4rem;
           cursor: pointer;
@@ -52,6 +53,7 @@
       display: flex;
       flex-direction: column;
       gap: 2.2rem;
+
       .title {
         font-weight: 500;
         font-size: 1.8rem;
@@ -63,16 +65,13 @@
         gap: 2.2rem;
 
         .link {
+          color: $blue;
           display: flex;
           align-items: center;
           gap: 1rem;
           font-size: 1.6rem;
         }
       }
-    }
-    .socials {
-      display: flex;
-      gap: 1rem;
     }
 
     .socials {
@@ -84,12 +83,15 @@
         font-size: 1.8rem;
         font-weight: 500;
       }
+
       .socials_link {
         display: flex;
         gap: 1rem;
 
         .social_icon {
-          color: gray;
+          color: $gray-darker;
+          width: 3.5rem;
+          height: 3.5rem;
         }
       }
     }
