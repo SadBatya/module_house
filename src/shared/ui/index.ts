@@ -3,3 +3,4 @@ export { Section } from './Section/Section';
 export { Slide } from './Slide/Slide';
 export { Title } from './Title/Title';
 export { P } from './P/P';
+export { TelegramIcon } from './Icons/TelegramIcon';

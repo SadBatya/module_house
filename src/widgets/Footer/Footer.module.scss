@@ -1,15 +1,18 @@
 .footer {
   display: flex;
   flex-direction: column;
+  border-top: 1px solid $gray-opacity;
 
   .footer_inner {
+    max-width: 124rem;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    border-top: 1px solid $gray-opacity;
-    padding-top: 9rem;
+    padding: 9rem 0;
     color: $blue;
     margin-bottom: 4.8rem;
+    margin: 0 auto;
 
     .logo_inner {
       .logo {
@@ -72,7 +75,7 @@
       gap: 1rem;
     }
 
-    .map {
+    .socials {
       display: flex;
       gap: 2.2rem;
       flex-direction: column;
@@ -81,27 +84,13 @@
         font-size: 1.8rem;
         font-weight: 500;
       }
-
-      .location {
+      .socials_link {
         display: flex;
-        align-items: center;
         gap: 1rem;
 
-        .location_text {
-          font-size: 1.6rem;
-          font-weight: 600;
+        .social_icon {
+          color: gray;
         }
-      }
-
-      .address_text {
-        font-size: 1.6rem;
-        font-weight: 400;
-      }
-
-      .map_coordinates {
-        width: 281px;
-        height: 146px;
-        background-color: $black;
       }
     }
   }

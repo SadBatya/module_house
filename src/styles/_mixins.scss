@@ -3,13 +3,11 @@
     @media (max-width: 480px) {
       @content;
     }
-  }
-  @elseif $point == tablet {
+  } @else if $point == tablet {
     @media (max-width: 768px) {
       @content;
     }
-  }
-  @elseif $point == desktop {
+  } @else if $point == desktop {
     @media (max-width: 1024px) {
       @content;
     }

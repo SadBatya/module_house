@@ -6,6 +6,7 @@ import { INTERNAL_ROUTES, EXTERNAL_ROUTES } from '@/shared/routes';
 import { useState } from 'react';
 import clsx from 'clsx';
 import { useBodyScrollLock } from '@/shared/hooks/useBodyScrollLock';
+import { TelegramIcon } from '@/shared/ui';
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -43,12 +44,7 @@ export const Header = () => {
           target="_blank"
           className={style.contact}
         >
-          <Image
-            src="/icons/telegram.svg"
-            width={35}
-            height={35}
-            alt="whatsapp"
-          />
+          <TelegramIcon className={style.icon} />
           <span className={style.phone}>+7 999 999 99 99</span>
         </Link>
         <button
@@ -78,12 +74,7 @@ export const Header = () => {
                 Обратная связь
               </Link>
               <Link href={EXTERNAL_ROUTES.TELEGRAM} className={style.list_item}>
-                <Image
-                  src="/icons/telegram.svg"
-                  width={35}
-                  height={35}
-                  alt="whatsapp"
-                />
+                <TelegramIcon className={style.icon} />
                 +7 999 999 99 99
               </Link>
             </ul>

@@ -27,7 +27,7 @@ export const Footer = () => {
             <li className={style.link}>О компании</li>
             <li className={style.link}>Проекты</li>
             <li className={style.link}>Каталог</li>
-            <li className={style.link}>Promo</li>
+            <li className={style.link}>Промо</li>
           </ul>
         </div>
         <div className={style.contacts}>
@@ -54,59 +54,28 @@ export const Footer = () => {
               <span className={style.phone}>hello@мыдома.рф</span>
             </Link>
           </ul>
+        </div>
+        <div className={style.socials}>
           <h4 className={style.title}>Социальные сети</h4>
-          <ul className={style.socials}>
+          <ul className={style.socials_link}>
             <Link href={''}>
               <Image
-                src="/icons/instagram.svg"
-                width={18}
-                height={18}
-                alt="instagram"
+                className={style.social_icon}
+                src="/icons/telegram.svg"
+                width={25}
+                height={25}
+                alt="telgram"
               />
             </Link>
             <Link href={''}>
               <Image
-                src="/icons/instagram.svg"
-                width={18}
-                height={18}
-                alt="instagram"
-              />
-            </Link>
-            <Link href={''}>
-              <Image
-                src="/icons/instagram.svg"
-                width={18}
-                height={18}
-                alt="instagram"
-              />
-            </Link>
-            <Link href={''}>
-              <Image
-                src="/icons/instagram.svg"
-                width={18}
-                height={18}
-                alt="instagram"
+                src="/icons/whatsapp.svg"
+                width={25}
+                height={25}
+                alt="whatsapp"
               />
             </Link>
           </ul>
-        </div>
-        <div className={style.map}>
-          <h4 className={style.title}>Мы на карте</h4>
-          <div className={style.location}>
-            <Image
-              className={style.location_icon}
-              src="/icons/location.svg"
-              alt="location"
-              width={17}
-              height={24}
-            />
-            <span className={style.location_text}>Адрес офиса</span>
-          </div>
-          <div className={style.address_text}>
-            г. Москва, пл. Победы, д. 4, <br />
-            подъезд 5, 2 этаж, оф. 204
-          </div>
-          <div className={style.map_coordinates}></div>
         </div>
       </div>
       <div className={style.rights}>© {year} Все права защищены</div>
