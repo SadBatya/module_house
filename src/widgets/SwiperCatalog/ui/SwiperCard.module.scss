@@ -4,11 +4,19 @@
 
   .img {
     margin-bottom: 1.2rem;
+    width: 100%;
+    height: auto;
   }
   .title {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 2rem;
+    text-transform: uppercase;
+
+    @include breakpoint(mobile) {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
   }
   .list {
     display: flex;
@@ -16,12 +24,20 @@
     gap: 1.5rem;
     margin-bottom: 2rem;
 
+    @include breakpoint(mobile) {
+      gap: 1rem;
+    }
+
     .list_item {
       display: flex;
       align-items: center;
       gap: 1rem;
       font-size: 1.6rem;
       font-weight: 400;
+
+      @include breakpoint(mobile) {
+        font-size: 1.1rem;
+      }
 
       .list_marker {
         display: block;
@@ -36,5 +52,10 @@
     font-weight: 400;
     font-size: 1.6rem;
     margin-bottom: 2.5rem;
+
+    @include breakpoint(mobile) {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
   }
 }

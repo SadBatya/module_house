@@ -38,13 +38,13 @@ export const Button = ({
 
   return (
     <button
+      style={styleObj}
       className={clsx(
         style.button,
         transparent && style.transparent,
         wf && style.width_full,
         className
       )}
-      style={styleObj}
     >
       {children}
     </button>

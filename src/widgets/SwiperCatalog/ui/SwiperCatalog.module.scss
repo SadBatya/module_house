@@ -9,6 +9,13 @@
     display: flex;
     gap: 3rem;
 
+    @include breakpoint(tablet) {
+      top: -15%;
+    }
+    @include breakpoint(mobile) {
+      top: -10%;
+    }
+
     .button_prev,
     .button_next {
       background: url('./assets/arrow.svg');
@@ -17,8 +24,17 @@
       background-repeat: no-repeat;
       background-position: center;
       background-color: transparent;
+      background-size: contain;
       border: none;
       cursor: pointer;
+
+      @include breakpoint(tablet) {
+        width: 42px;
+      }
+
+      @include breakpoint(mobile) {
+        width: 27px;
+      }
     }
 
     .button_prev {

@@ -3,10 +3,18 @@
   gap: 5rem;
   align-items: center;
 
+  @include breakpoint(mobile) {
+    gap: 2rem;
+  }
+
   .text {
     color: black;
     opacity: 50%;
     font-weight: 400;
     font-size: 1.6rem;
+
+    @include breakpoint(mobile) {
+      font-size: 1.2rem;
+    }
   }
 }

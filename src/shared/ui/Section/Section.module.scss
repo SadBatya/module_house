@@ -2,4 +2,8 @@
   max-width: 124rem;
   margin: 0 auto;
   margin-bottom: 16rem;
+
+  @include breakpoint(desktop) {
+    padding: 0 2rem;
+  }
 }

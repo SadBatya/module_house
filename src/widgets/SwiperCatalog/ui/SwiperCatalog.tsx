@@ -21,6 +21,20 @@ export const SwiperCatalog = () => {
         spaceBetween={30}
         loop={true}
         className={style.swiper}
+        breakpoints={{
+          340: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          834: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        }}
       >
         {swiperCatalogData.map(
           ({ img, title, time, price, description }, index) => (
