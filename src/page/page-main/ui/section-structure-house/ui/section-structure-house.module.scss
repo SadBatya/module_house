@@ -5,6 +5,14 @@
   opacity: 50%;
   max-width: 65.2rem;
   margin-bottom: 4rem;
+
+  @include breakpoint(tablet) {
+    font-size: 1.6rem;
+  }
+
+  @include breakpoint(mobile) {
+    font-size: 1.2rem;
+  }
 }
 
 .nav {
@@ -19,13 +27,20 @@
     font-size: 2rem;
     color: black;
     cursor: pointer;
-
     line-height: 140%;
     opacity: 50%;
     transition: 0.3s all;
 
     &:hover {
       opacity: 100%;
+    }
+
+    @include breakpoint(tablet) {
+      font-size: 1.6rem;
+    }
+
+    @include breakpoint(mobile) {
+      font-size: 1.2rem;
     }
   }
 
@@ -45,17 +60,39 @@
     max-width: 120rem;
     height: auto;
     margin: 0 auto;
+    width: 100%;
   }
 
   .block {
     position: absolute;
     top: 10%;
     right: -10%;
+
+    @include breakpoint(tablet) {
+      top: 0;
+      right: 0;
+    }
+
+    @include breakpoint(mobile) {
+      top: -10%;
+      right: -5%;
+    }
+
+    .block_inner {
+      .line {
+        @include breakpoint(desktop) {
+          bottom: 20%;
+          right: auto;
+          top: auto;
+        }
+      }
+    }
   }
   .block_2 {
     position: absolute;
     top: 72%;
     right: -8%;
+
     .block_inner {
       .line {
         .line_inner {
@@ -64,6 +101,7 @@
       }
     }
   }
+
   .block_3 {
     position: absolute;
     top: 30%;
@@ -91,10 +129,38 @@
       flex-direction: column;
       gap: 2rem;
 
+      @include breakpoint(tablet) {
+        gap: 1.5rem;
+      }
+
+      @include breakpoint(mobile) {
+        gap: 1rem;
+        align-items: flex-end;
+      }
+
       .title {
         font-size: 2rem;
         font-weight: 700;
         color: black;
+
+        @include breakpoint(tablet) {
+          font-size: 1.6rem;
+        }
+
+        @include breakpoint(mobile) {
+          font-size: 1.2rem;
+        }
+      }
+
+      .description {
+        @include breakpoint(tablet) {
+          font-size: 1.4rem;
+        }
+
+        @include breakpoint(mobile) {
+          font-size: 1rem;
+          max-width: 50%;
+        }
       }
     }
 
@@ -108,6 +174,14 @@
         height: 0.1rem;
         background-color: black;
         position: relative;
+
+        @include breakpoint(tablet) {
+          width: 12rem;
+        }
+
+        @include breakpoint(mobile) {
+          width: 8rem;
+        }
 
         .dote {
           position: absolute;
