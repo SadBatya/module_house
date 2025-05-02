@@ -5,6 +5,7 @@
 
   @include breakpoint(tablet) {
     font-size: 4rem;
+    margin-bottom: 2.5rem;
   }
 
   @include breakpoint(mobile) {

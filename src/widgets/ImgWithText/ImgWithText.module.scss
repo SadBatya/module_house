@@ -2,11 +2,25 @@
   display: flex;
   justify-content: space-between;
   gap: 14rem;
+
+  @include breakpoint(desktop) {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  @include breakpoint(mobile) {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
   .img {
     flex: 1;
     border-radius: 100%;
     max-width: 54rem;
     height: auto;
+    width: 100%;
   }
 
   .info {
@@ -20,6 +34,14 @@
       color: black;
       font-size: 2rem;
       font-weight: 400;
+
+      @include breakpoint(tablet) {
+        font-size: 1.5rem;
+      }
+
+      @include breakpoint(mobile) {
+        font-size: 1.2rem;
+      }
     }
   }
 }

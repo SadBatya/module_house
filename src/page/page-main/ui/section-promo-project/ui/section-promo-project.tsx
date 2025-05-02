@@ -28,9 +28,7 @@ export const SectionPromoProject = () => (
           Небольшой загородный дом с террасой, предназначенный для
           круглогодичного проживания на природе
         </p>
-        <Button wf py="1.2" fw="400">
-          Подробнее
-        </Button>
+        <Button className={style.button}>Подробнее</Button>
       </div>
       <Image className={style.img} src={housePng} alt="house" />
     </div>

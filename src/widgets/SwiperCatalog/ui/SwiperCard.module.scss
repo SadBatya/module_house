@@ -58,4 +58,14 @@
       margin-bottom: 1rem;
     }
   }
+
+  .button {
+    padding: 1.2rem 3.6rem;
+    font-weight: 400;
+
+    @include breakpoint(mobile) {
+      padding: 1rem 2.5rem;
+      font-size: 1.2rem;
+    }
+  }
 }

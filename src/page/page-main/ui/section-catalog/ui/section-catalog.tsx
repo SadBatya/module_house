@@ -9,7 +9,7 @@ export const SectionCatalog = () => (
     <Title>Каталог проектов</Title>
     <SwiperCatalog />
     <div className={style.subsection}>
-      <Button fz="1.6" py="1.7" px="4.3" fw="400" transparent>
+      <Button className={style.button} transparent>
         Показать все
       </Button>
       <p className={style.text}>Заказать разработку индивидуального проекта</p>

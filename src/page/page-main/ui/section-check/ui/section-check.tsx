@@ -15,9 +15,7 @@ export const SectionCheck = () => (
           Вы можете создать проект дома вместе с нашими конструкторами и
           архитекторами, учитывая все ваши пожелания и предпочтения.
         </P>
-        <Button px="4.5" py="2.4" fz="1.6">
-          Рассчитать проект
-        </Button>
+        <Button>Рассчитать проект</Button>
       </div>
       <Image className={style.img} alt="house-project" src={housePgn}></Image>
     </div>

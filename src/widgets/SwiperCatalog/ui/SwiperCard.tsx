@@ -31,8 +31,6 @@ export const SwiperCard = ({ img, title, time, price, description }: Props) => (
       </li>
     </ul>
     <p className={style.description}>{description}</p>
-    <Button className={style.btn} py="1.2" px="3.6" fz="1.6" fw="400">
-      Подробнее
-    </Button>
+    <Button className={style.button}>Подробнее</Button>
   </div>
 );

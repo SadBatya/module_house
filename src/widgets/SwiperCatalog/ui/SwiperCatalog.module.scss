@@ -2,6 +2,14 @@
   position: relative;
   margin-bottom: 10rem;
 
+  @include breakpoint(tablet) {
+    margin-bottom: 5rem;
+  }
+
+  @include breakpoint(mobile) {
+    margin-bottom: 3rem;
+  }
+
   .buttons {
     position: absolute;
     right: 1%;
