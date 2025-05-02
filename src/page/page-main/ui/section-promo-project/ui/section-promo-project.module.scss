@@ -2,18 +2,59 @@
   display: flex;
   align-items: center;
 
+  @include breakpoint(mobile) {
+    justify-content: center;
+  }
+
   .card {
     max-width: 28rem;
     color: black;
 
+    @include breakpoint(mobile) {
+      width: 100%;
+    }
+
+    .title {
+      @include breakpoint(tablet) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .img_mobile {
+      display: none;
+
+      @include breakpoint(mobile) {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
     .name {
       display: flex;
       justify-content: space-between;
       margin-bottom: 2.5rem;
 
+      @include breakpoint(tablet) {
+        flex-direction: column;
+      }
+
+      @include breakpoint(mobile) {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1.2rem;
+      }
+
       .model {
         font-size: 2.5rem;
         font-weight: 500;
+
+        @include breakpoint(tablet) {
+          font-size: 1.6rem;
+        }
+
+        @include breakpoint(mobile) {
+          font-size: 1.2rem;
+        }
       }
 
       .size {
@@ -22,6 +63,10 @@
         text-wrap: nowrap;
         padding-top: 0.6rem;
         opacity: 50%;
+
+        @include breakpoint(mobile) {
+          font-size: 1.2rem;
+        }
       }
     }
     .list {
@@ -38,6 +83,10 @@
         font-weight: 400;
         color: black;
 
+        @include breakpoint(mobile) {
+          font-size: 1.2rem;
+        }
+
         .list_marker {
           display: block;
           width: 1.5rem;
@@ -52,6 +101,11 @@
       font-weight: 400;
       margin-bottom: 5rem;
       opacity: 70%;
+
+      @include breakpoint(tablet) {
+        font-size: 1.4rem;
+        margin-bottom: 2.5rem;
+      }
     }
   }
 
@@ -60,5 +114,9 @@
     height: auto;
     position: absolute;
     right: 0;
+
+    @include breakpoint(mobile) {
+      display: none;
+    }
   }
 }
