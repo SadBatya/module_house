@@ -9,8 +9,9 @@ export const SectionProduction = () => (
       Наше <span className={style.color}>производство</span>
     </Title>
     <div className={style.container}>
-      {cardData.map(({ title, img }, index) => (
+      {cardData.map(({ title, img, text }, index) => (
         <div key={index} className={style.imgContainer}>
+          <p className={style.text}> {text} </p>
           <Image
             src={img}
             alt={title}
