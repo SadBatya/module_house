@@ -21,6 +21,20 @@ export const TwoSliderHorizontal = () => {
           disableOnInteraction: false,
         }}
         speed={10000}
+        breakpoints={{
+          375: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        }}
         className={style.swiper}
       >
         {sliderImages.map((item, index) => (
@@ -40,6 +54,20 @@ export const TwoSliderHorizontal = () => {
           reverseDirection: true,
         }}
         speed={10000}
+        breakpoints={{
+          375: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        }}
         className={style.swiper}
       >
         {sliderImages.map((item, index) => (
