@@ -8,4 +8,4 @@ export const Section = ({
 }: {
   children: ReactNode;
   className?: string;
-}) => <section className={clsx(style.section, className)}>{children}</section>;
+}) => <section className={clsx(className, style.section)}>{children}</section>;

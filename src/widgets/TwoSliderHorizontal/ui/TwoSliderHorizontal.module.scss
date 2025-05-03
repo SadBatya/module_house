@@ -1,4 +1,14 @@
 .swiper_catalog {
+  margin-bottom: 16rem;
+
+  @include breakpoint(tablet) {
+    margin-bottom: 8rem;
+  }
+
+  @include breakpoint(mobile) {
+    margin-bottom: 4rem;
+  }
+
   .swiper {
     .slide {
       .img {
