@@ -1,3 +1,12 @@
 .section {
   border: #0a142f 3px solid;
+  width: 140rem;
+  .title_color {
+    color: $orange;
+  }
+  .slide {
+    max-width: 20rem;
+    height: 20rem;
+    border: #979797 2px solid;
+  }
 }
