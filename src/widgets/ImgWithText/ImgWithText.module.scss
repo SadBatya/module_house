@@ -21,6 +21,11 @@
     max-width: 54rem;
     height: auto;
     width: 100%;
+
+    @include breakpoint(desktop) {
+      flex: 1;
+      max-width: 38.5rem;
+    }
   }
 
   .info {
@@ -29,6 +34,10 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: start;
+
+    @include breakpoint(desktop) {
+      flex: 1;
+    }
 
     .description {
       color: black;

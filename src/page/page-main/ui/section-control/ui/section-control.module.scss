@@ -1,0 +1,7 @@
+.inner {
+  flex-direction: row;
+
+  @include breakpoint(mobile) {
+    flex-direction: row-reverse;
+  }
+}
