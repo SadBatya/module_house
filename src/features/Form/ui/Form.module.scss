@@ -5,8 +5,18 @@
   height: 100%;
   color: $black;
 
-  .btn {
+  .button {
     margin-top: 10rem;
+
+    @include breakpoint(tablet) {
+      margin-top: 5rem;
+      width: 100%;
+    }
+
+    @include breakpoint(mobile) {
+      padding: 1.2rem;
+      margin-top: 2rem;
+    }
   }
 
   .subtext {
