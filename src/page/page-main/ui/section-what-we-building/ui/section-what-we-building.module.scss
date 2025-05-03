@@ -1,0 +1,7 @@
+.section {
+  padding: 0 5rem;
+
+  @include breakpoint(mobile) {
+    padding: 0 2rem;
+  }
+}

@@ -13,6 +13,6 @@ export const SectionCheckPrice = () => (
       </Title>
       <Form />
     </div>
-    <Image src={roomPng} alt="room" />
+    <Image className={style.img} src={roomPng} alt="room" />
   </Section>
 );

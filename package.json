@@ -9,7 +9,7 @@
     "lint": "next lint",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
     "check": "prettier --check \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
-    "prepare": "husky install",
+    "prepare": "husky",
     "type-check": "tsc --noEmit"
   },
   "lint-staged": {
@@ -22,8 +22,9 @@
     ]
   },
   "dependencies": {
+    "@types/swiper": "^6.0.0",
     "clsx": "^2.1.1",
-    "next": "^15.3.1",
+    "next": "15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "swiper": "^11.2.6"
@@ -33,7 +34,6 @@
     "@commitlint/config-conventional": "^19.8.0",
     "@eslint/eslintrc": "^3",
     "@svgr/webpack": "^8.1.0",
-    "@types/lint-staged": "^13.3.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

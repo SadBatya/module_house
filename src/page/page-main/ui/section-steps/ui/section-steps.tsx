@@ -5,6 +5,8 @@ import style from './section.module.scss';
 import { listData } from '../model/data';
 import { ListItem } from '@/shared/ui/ListItem/ListItem';
 import insidePng from './assets/inside.png';
+import insideMobPng from './assets/inside_mob.jpg';
+
 import Image from 'next/image';
 
 export const SectionSteps = () => (
@@ -12,6 +14,7 @@ export const SectionSteps = () => (
     <div className={style.inner}>
       <div className={style.container_text}>
         <Title>Этапы возведения вашего будущего дома</Title>
+        <Image className={style.img_mob} src={insideMobPng} alt="" />
         <ul>
           {listData.map(({ title, subtext }, index) => (
             <ListItem title={title} subtext={subtext} key={index} />

@@ -1,8 +1,20 @@
-.section_container {
-  margin-bottom: 16rem;
-}
-
 .section {
   max-width: 144rem;
   margin-bottom: 5rem;
+
+  @include breakpoint(tablet) {
+    margin-bottom: 2rem;
+  }
+
+  .description {
+    font-size: 2.5rem;
+
+    @include breakpoint(tablet) {
+      font-size: 1.6rem;
+    }
+
+    @include breakpoint(mobile) {
+      font-size: 1.2rem;
+    }
+  }
 }

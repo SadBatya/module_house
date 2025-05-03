@@ -1,9 +1,8 @@
 'use client';
 
-import { Section } from '@/shared/ui';
+import { Section, Title } from '@/shared/ui';
 import style from './section-license.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Swiper as SwiperType } from 'swiper/types';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -11,6 +10,9 @@ import 'swiper/css/pagination';
 export const SectionLicense = () => {
   return (
     <Section className={style.section}>
+      <Title uppercase className={style.title}>
+        <span className={style.title_color}>ЛиЦЕНЗИИ </span> И ГОСТ
+      </Title>
       <Swiper
         spaceBetween={20}
         slidesPerView={3.5}

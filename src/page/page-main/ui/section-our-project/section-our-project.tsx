@@ -5,7 +5,7 @@ import { P } from '@/shared/ui';
 import style from './section-our-project.module.scss';
 
 export const SectionOurProject = () => (
-  <div className={style.section_container}>
+  <>
     <Section className={style.section}>
       <Title center uppercase>
         Наши проекты
@@ -16,5 +16,5 @@ export const SectionOurProject = () => (
       </P>
     </Section>
     <TwoSliderHorizontal />
-  </div>
+  </>
 );

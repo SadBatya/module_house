@@ -7,7 +7,7 @@ export const Form = () => (
     <Input placeholder={'Имя'} labelText={'Ваше имя'} />
     <Input placeholder={'Телефон'} labelText={'Телефон'} />
     <Input placeholder={'Telegram'} labelText={'Ваш Telegram'} />
-    <Button className={style.btn}>Отправить заявку</Button>
+    <Button className={style.button}>Отправить заявку</Button>
     <span className={style.subtext}>
       Указывая свои данные вы даёте согласие на обработку персональных данных, в
       соответствии с политикой конфиденциальности

@@ -7,19 +7,16 @@ import Image from 'next/image';
 import style from './section-check.module.scss';
 
 export const SectionCheck = () => (
-  <Section>
-    <div className={style.container}>
-      <div className={style.info}>
-        <Title>Заказать проект</Title>
-        <P className={style.description}>
-          Вы можете создать проект дома вместе с нашими конструкторами и
-          архитекторами, учитывая все ваши пожелания и предпочтения.
-        </P>
-        <Button px="4.5" py="2.4" fz="1.6">
-          Рассчитать проект
-        </Button>
-      </div>
-      <Image className={style.img} alt="house-project" src={housePgn}></Image>
+  <Section className={style.section}>
+    <div className={style.info}>
+      <Title className={style.title}>Заказать проект</Title>
+      <Image className={style.img_tablet} alt="house-project" src={housePgn} />
+      <P className={style.description}>
+        Вы можете создать проект дома вместе с нашими конструкторами и
+        архитекторами, учитывая все ваши пожелания и предпочтения.
+      </P>
+      <Button className={style.button}>Рассчитать проект</Button>
     </div>
+    <Image className={style.img} alt="house-project" src={housePgn} />
   </Section>
 );

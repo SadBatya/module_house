@@ -2,9 +2,25 @@
   display: flex;
   justify-content: space-between;
 
+  @include breakpoint(desktop) {
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
   .container_text {
     max-width: 60rem;
     flex: 1;
+
+    .img_mob {
+      display: none;
+
+      @include breakpoint(tablet) {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 3rem;
+      }
+    }
 
     .grayBlock {
       color: black;
@@ -12,6 +28,11 @@
       background-color: $gray-opacity;
       padding: 3rem;
       border-radius: 1.2rem;
+
+      @include breakpoint(desktop) {
+        font-size: 1.5rem;
+        padding: 2.5rem;
+      }
     }
   }
 
@@ -20,5 +41,18 @@
     right: 0;
     max-width: 72.9rem;
     height: auto;
+    width: 100%;
+    height: auto;
+
+    @include breakpoint(desktop) {
+      flex: 1;
+      position: relative;
+      border-radius: 0.8rem;
+      max-width: 50rem;
+    }
+
+    @include breakpoint(tablet) {
+      display: none;
+    }
   }
 }

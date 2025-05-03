@@ -19,7 +19,7 @@ export const SectionMain = () => (
           Подтверждение от банка за 1,5 часа. Работаем с материнским капиталом.
         </li>
       </ul>
-      <Button>Выбрать дом</Button>
+      <Button className={style.button}>Выбрать дом</Button>
     </div>
     <Carousel />
   </section>

@@ -9,7 +9,8 @@ export const SectionPromoProject = () => (
   <Section>
     <div className={style.container}>
       <div className={style.card}>
-        <Title>Карточка промо-проекта</Title>
+        <Title className={style.title}>Карточка промо-проекта</Title>
+        <Image className={style.img_mobile} src={housePng} alt="house" />
         <div className={style.name}>
           <h4 className={style.model}>Модульный A-frame дом</h4>
           <span className={style.size}>33 кв.м</span>
@@ -27,9 +28,7 @@ export const SectionPromoProject = () => (
           Небольшой загородный дом с террасой, предназначенный для
           круглогодичного проживания на природе
         </p>
-        <Button wf py="1.2" fw="400">
-          Подробнее
-        </Button>
+        <Button className={style.button}>Подробнее</Button>
       </div>
       <Image className={style.img} src={housePng} alt="house" />
     </div>

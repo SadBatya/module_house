@@ -1,18 +1,41 @@
 .footer {
   display: flex;
   flex-direction: column;
+  border-top: 1px solid $gray-opacity;
 
   .footer_inner {
+    max-width: 124rem;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    border-top: 1px solid $gray-opacity;
-    padding-top: 9rem;
+    padding: 9rem 5rem;
     color: $blue;
     margin-bottom: 4.8rem;
+    margin: 0 auto;
+
+    @include breakpoint(tablet) {
+      flex-direction: column;
+      align-items: center;
+      padding: 5em 2rem;
+      gap: 3rem;
+    }
 
     .logo_inner {
+      display: flex;
+      flex-direction: column;
+      gap: 2.7rem;
+
+      @include breakpoint(tablet) {
+        gap: 3.3rem;
+        flex-direction: row;
+      }
+
       .logo {
+        @include breakpoint(mobile) {
+          width: 12rem;
+          height: 5rem;
+        }
       }
 
       .text {
@@ -21,6 +44,17 @@
         font-size: 1.5rem;
         font-weight: 400;
         font-family: var(--font-inter);
+
+        @include breakpoint(tablet) {
+          font-size: 1.2rem;
+        }
+      }
+
+      @include breakpoint(tablet) {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100%;
       }
     }
 
@@ -28,6 +62,12 @@
       display: flex;
       flex-direction: column;
       gap: 2.2rem;
+
+      @include breakpoint(tablet) {
+        width: 100%;
+        align-items: center;
+        gap: 1.2rem;
+      }
 
       .title {
         font-weight: 500;
@@ -38,6 +78,10 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
+
+        @include breakpoint(tablet) {
+          align-items: center;
+        }
         .link {
           font-size: 1.4rem;
           cursor: pointer;
@@ -49,6 +93,11 @@
       display: flex;
       flex-direction: column;
       gap: 2.2rem;
+
+      @include breakpoint(tablet) {
+        align-items: center;
+      }
+
       .title {
         font-weight: 500;
         font-size: 1.8rem;
@@ -59,49 +108,47 @@
         flex-direction: column;
         gap: 2.2rem;
 
+        @include breakpoint(tablet) {
+          align-items: center;
+        }
+
         .link {
+          color: $blue;
           display: flex;
           align-items: center;
           gap: 1rem;
           font-size: 1.6rem;
+
+          @include breakpoint(tablet) {
+            font-size: 1.4rem;
+          }
         }
       }
     }
-    .socials {
-      display: flex;
-      gap: 1rem;
-    }
 
-    .map {
+    .socials {
       display: flex;
       gap: 2.2rem;
       flex-direction: column;
+
+      @include breakpoint(tablet) {
+        align-items: center;
+      }
 
       .title {
         font-size: 1.8rem;
         font-weight: 500;
       }
 
-      .location {
+      .socials_link {
         display: flex;
-        align-items: center;
         gap: 1rem;
 
-        .location_text {
-          font-size: 1.6rem;
-          font-weight: 600;
+        .social_icon {
+          color: $gray-darker;
+          width: 3.5rem;
+          height: 3.5rem;
         }
-      }
-
-      .address_text {
-        font-size: 1.6rem;
-        font-weight: 400;
-      }
-
-      .map_coordinates {
-        width: 281px;
-        height: 146px;
-        background-color: $black;
       }
     }
   }

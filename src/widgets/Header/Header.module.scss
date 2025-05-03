@@ -14,13 +14,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 2rem 5rem;
 
     .logo {
       cursor: pointer;
     }
 
     .navigation {
+      @include breakpoint(tablet) {
+        display: none;
+      }
+
       .list {
         display: flex;
         gap: 3rem;
@@ -28,7 +32,9 @@
         text-transform: uppercase;
         font-size: 1.5rem;
         cursor: pointer;
+
         .link {
+          color: $white;
           font-weight: 400;
         }
       }
@@ -39,9 +45,118 @@
       align-items: center;
       gap: 1rem;
 
+      @include breakpoint(tablet) {
+        display: none;
+      }
+
+      .icon {
+        color: $white;
+      }
+
       .phone {
+        color: $white;
         font-size: 2.5rem;
       }
+    }
+
+    .burger_button {
+      width: 2.3rem;
+      height: 2.2rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 10;
+      display: none;
+
+      @include breakpoint(tablet) {
+        display: flex;
+      }
+
+      .burger_line {
+        width: 100%;
+        background-color: $orange;
+        height: 0.3rem;
+        border-radius: 2rem;
+        transition: all 0.3s;
+        position: relative;
+
+        &::after,
+        &::before {
+          content: '';
+          display: block;
+          height: 0.3rem;
+          width: 100%;
+          position: absolute;
+          bottom: 0.6rem;
+          border-radius: 2rem;
+          background-color: $orange;
+          pointer-events: none;
+        }
+
+        &::before {
+          bottom: 0;
+          top: 0.6rem;
+        }
+      }
+    }
+
+    .burger_button_active {
+      .burger_line {
+        transform: rotate(45deg);
+        &::before {
+          display: none;
+        }
+        &::after {
+          transform: rotate(-90deg) translateX(-6px);
+        }
+      }
+    }
+
+    .burger_menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100vw;
+      height: 100dvh;
+      background-color: rgba($color: #000000, $alpha: 0.9);
+      transform: translateX(-100%);
+      transition: all 0.3s;
+
+      .nav_list {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .list_inner {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+
+          .list_item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: $white;
+            font-size: 2rem;
+            color: $orange;
+            text-transform: uppercase;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .burger_menu_open {
+      transform: translateX(0);
     }
   }
 }

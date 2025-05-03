@@ -1,11 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="688969f8-db23-43c8-934e-4b2df8177625" name="Changes" comment="feat: ts lint">
+    <list default="true" id="688969f8-db23-43c8-934e-4b2df8177625" name="Changes" comment="Refactor: merged with main">
+      <change afterPath="$PROJECT_DIR$/.husky/commit-msg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/logo-footer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/telegram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-control/ui/section-control.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-guarantee/model/data.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-steps/ui/assets/inside_mob.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-what-we-building/ui/section-what-we-building.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/consts/consts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/hooks/useBodyScrollLock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/routes/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/ui/Icons/TelegramIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/ui/Icons/WhatsAppIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.husky/pre-commit" beforeDir="false" afterPath="$PROJECT_DIR$/.husky/pre-commit" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-license/index.js.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-license/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commitlint.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/commitlint.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icons/mail.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/icons/mail.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icons/phone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/icons/phone.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icons/whatsapp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/icons/whatsapp.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Form/ui/Form.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Form/ui/Form.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Form/ui/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Form/ui/Form.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-license/ui/section-license.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-license/ui/section-license.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-license/ui/section-license.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-license/ui/section-license.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-main/ui/section-about/ui/section-about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-about/ui/section-about.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-main/ui/section-catalog/ui/section-catalog.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-catalog/ui/section-catalog.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-main/ui/section-catalog/ui/section-catalog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-catalog/ui/section-catalog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-main/ui/section-check-price/ui/section-check-price.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-check-price/ui/section-check-price.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-main/ui/section-check-price/ui/section-check-price.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-check-price/ui/section-check-price.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-main/ui/section-check/ui/section-check.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-check/ui/section-check.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-main/ui/section-check/ui/section-check.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-check/ui/section-check.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-main/ui/section-control/ui/section-control.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-control/ui/section-control.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-main/ui/section-guarantee/ui/section-guarantee.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-guarantee/ui/section-guarantee.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-main/ui/section-guarantee/ui/section-guarantee.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-guarantee/ui/section-guarantee.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-main/ui/section-main/section-main.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-main/section-main.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-main/ui/section-main/section-main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-main/section-main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-main/ui/section-our-project/section-our-project.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-our-project/section-our-project.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-main/ui/section-our-project/section-our-project.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-our-project/section-our-project.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-main/ui/section-promo-project/ui/section-promo-project.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-promo-project/ui/section-promo-project.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-main/ui/section-promo-project/ui/section-promo-project.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-promo-project/ui/section-promo-project.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-main/ui/section-steps/ui/section-steps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-steps/ui/section-steps.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-main/ui/section-steps/ui/section.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-steps/ui/section.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-main/ui/section-structure-house/ui/section-structure-house.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-structure-house/ui/section-structure-house.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-main/ui/section-what-we-building/ui/section-what-we-building.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-main/ui/section-what-we-building/ui/section-what-we-building.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/Button/Button.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Button/Button.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Button/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/Input/Input.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Input/Input.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/ListItem/ListItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/ListItem/ListItem.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/Section/Section.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Section/Section.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/Section/Section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Section/Section.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/Slide/Slide.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Slide/Slide.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/Title/Title.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Title/Title.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Accordion/ui/Accordion.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Accordion/ui/Accordion.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Carousel/ui/Carousel.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Carousel/ui/Carousel.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Carousel/ui/CarouselCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Carousel/ui/CarouselCard.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Carousel/ui/CarouselCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Carousel/ui/CarouselCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Footer/Footer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/Header.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/ImgWithText/ImgWithText.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/ImgWithText/ImgWithText.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/ImgWithText/ImgWithText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/ImgWithText/ImgWithText.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/SwiperCatalog/ui/SwiperCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/SwiperCatalog/ui/SwiperCard.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/SwiperCatalog/ui/SwiperCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/SwiperCatalog/ui/SwiperCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/SwiperCatalog/ui/SwiperCatalog.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/SwiperCatalog/ui/SwiperCatalog.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/SwiperCatalog/ui/SwiperCatalog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/SwiperCatalog/ui/SwiperCatalog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/TwoSliderHorizontal/ui/TwoSliderHorizontal.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/TwoSliderHorizontal/ui/TwoSliderHorizontal.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/TwoSliderHorizontal/ui/TwoSliderHorizontal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/TwoSliderHorizontal/ui/TwoSliderHorizontal.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +197,7 @@
       <workItem from="1745625385706" duration="56000" />
       <workItem from="1745625445784" duration="698000" />
       <workItem from="1745628060689" duration="1615000" />
-      <workItem from="1745776289741" duration="4234000" />
+      <workItem from="1745776289741" duration="5368000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1745597857336</created>
@@ -179,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1745627654258</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Refactor: added text">
+      <created>1746298426706</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746298426706</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +276,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="feat: ts lint" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: ts lint" />
+    <MESSAGE value="Refactor: added text" />
+    <MESSAGE value="Refactor: merged with main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor: merged with main" />
   </component>
 </project>
