@@ -3,6 +3,10 @@
   flex-direction: column;
   max-width: 34rem;
 
+  @include breakpoint(mobile) {
+    max-width: 100%;
+  }
+
   .label {
     font-size: 2rem;
     color: $black;

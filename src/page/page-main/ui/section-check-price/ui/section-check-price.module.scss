@@ -11,6 +11,11 @@
     @include breakpoint(tablet) {
       padding: 5rem 0;
     }
+
+    @include breakpoint(mobile) {
+      padding: 5rem 0;
+    }
+
     .title {
       font-size: 4rem;
       text-wrap: nowrap;
