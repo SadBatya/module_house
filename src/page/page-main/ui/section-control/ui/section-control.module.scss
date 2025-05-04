@@ -2,6 +2,6 @@
   flex-direction: row;
 
   @include breakpoint(mobile) {
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
   }
 }

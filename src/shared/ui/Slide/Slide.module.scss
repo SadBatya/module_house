@@ -41,6 +41,10 @@
         writing-mode: horizontal-tb;
         text-wrap: nowrap;
       }
+
+      @include breakpoint(mobile) {
+        font-size: 1.2rem;
+      }
     }
 
     .line {

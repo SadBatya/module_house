@@ -12,6 +12,8 @@
 
   @include breakpoint(mobile) {
     font-size: 1.2rem;
+
+    height: 6rem;
   }
 }
 
@@ -70,14 +72,18 @@
     opacity: 50%;
     transition: all 0.3s;
 
-    @include breakpoint(tablet) {
-      top: 0;
+    @include breakpoint(desktop) {
+      top: -5%;
       right: 0;
     }
 
-    @include breakpoint(mobile) {
-      top: -10%;
+    @include breakpoint(tablet) {
+      top: -5%;
       right: -5%;
+    }
+    @include breakpoint(mobile) {
+      top: -22%;
+      right: 10%;
     }
 
     .block_inner {
@@ -85,6 +91,11 @@
         @include breakpoint(desktop) {
           bottom: 20%;
           right: auto;
+          top: auto;
+        }
+        @include breakpoint(mobile) {
+          bottom: 30%;
+          right: 0;
           top: auto;
         }
       }
@@ -97,11 +108,36 @@
     right: -8%;
     opacity: 50%;
     transition: all 0.3s;
+    @include breakpoint(desktop) {
+      top: 75%;
+      right: -2%;
+    }
+    @include breakpoint(desktop) {
+      top: 80%;
+      right: 10%;
+    }
 
     .block_inner {
       .line {
+        @include breakpoint(desktop) {
+          bottom: 20%;
+          right: auto;
+          top: auto;
+        }
+        @include breakpoint(mobile) {
+          right: 0;
+          top: -2%;
+        }
         .line_inner {
           width: 30rem;
+
+          @include breakpoint(desktop) {
+            width: 15rem;
+          }
+
+          @include breakpoint(mobile) {
+            width: 10rem;
+          }
         }
       }
     }
@@ -113,12 +149,41 @@
     left: -10%;
     opacity: 50%;
     transition: all 0.3s;
+    @include breakpoint(desktop) {
+      top: 10%;
+      left: 10%;
+    }
+
+    @include breakpoint(mobile) {
+      top: 0;
+      left: 10%;
+    }
 
     .block_inner {
+      .text {
+        @include breakpoint(mobile) {
+          align-items: flex-start;
+        }
+      }
       .line {
         left: 110%;
+
+        @include breakpoint(desktop) {
+          bottom: 20%;
+          left: 0;
+          top: auto;
+        }
+
+        @include breakpoint(mobile) {
+          right: auto;
+          top: auto;
+        }
         .line_inner {
           width: 30rem;
+
+          @include breakpoint(mobile) {
+            width: 10rem;
+          }
           .dote {
             left: auto;
             right: 0;
@@ -139,7 +204,7 @@
     .text {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 0.5rem;
 
       @include breakpoint(tablet) {
         gap: 1.5rem;

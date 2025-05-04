@@ -9,9 +9,7 @@ export const SectionPromoProject = () => (
   <Section>
     <div className={style.container}>
       <div className={style.card}>
-        <Title className={style.title}>
-          Проект <br /> «У Озера»
-        </Title>
+        <Title className={style.title}>Проект&nbsp;«У&nbsp;Озера»</Title>
         <Image className={style.img_mobile} src={housePng} alt="house" />
         <div className={style.name}>
           <h4 className={style.model}>Модульный A-frame дом</h4>
