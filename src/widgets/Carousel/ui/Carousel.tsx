@@ -15,7 +15,6 @@ export const Carousel = () => {
 
   return (
     <div className={style.swiper_container}>
-      <h2 className={style.title}>Проекты на ваш выбор</h2>
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         slidesPerView={3}

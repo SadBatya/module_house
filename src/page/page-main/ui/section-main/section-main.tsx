@@ -6,7 +6,7 @@ export const SectionMain = () => (
   <section className={style.main}>
     <div className={style.left_section}>
       <h1 className={style.title}>
-        Строим жизнь без лишних метров — только то, что действительно ваше
+        Строим жизнь без лишних метров <br /> Только то, что действительно ваше
       </h1>
       <ul className={style.list}>
         <li className={style.list_inner}>

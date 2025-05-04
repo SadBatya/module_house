@@ -12,7 +12,6 @@
 
   @include breakpoint(mobile) {
     font-size: 1.2rem;
-
     height: 6rem;
   }
 }
@@ -87,6 +86,14 @@
     }
 
     .block_inner {
+      .text {
+        .description {
+          @include breakpoint(mobile) {
+            margin-bottom: 0;
+          }
+        }
+      }
+
       .line {
         @include breakpoint(desktop) {
           bottom: 20%;

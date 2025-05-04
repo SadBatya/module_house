@@ -1,6 +1,5 @@
 import { StaticImageData } from 'next/image';
 import style from './CarouselCard.module.scss';
-import { Button } from '@/shared/ui/Button/Button';
 
 interface Props {
   description: string;
@@ -20,6 +19,5 @@ export const CarouselCard = ({ description, title, bgImage }: Props) => (
   >
     <p className={style.description}>{description}</p>
     <h3 className={style.title}>{title}</h3>
-    <Button className={style.button}>Смотреть проекты</Button>
   </div>
 );

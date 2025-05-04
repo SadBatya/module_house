@@ -78,7 +78,7 @@ export const SectionStructureHouse = () => {
         >
           <div className={style.block_inner}>
             <div className={style.text}>
-              <h6 className={style.title}>Каркас</h6>
+              <h6 className={style.title}>Отделка</h6>
               <p className={style.description}>Собственного производства</p>
             </div>
             <div className={style.line}>

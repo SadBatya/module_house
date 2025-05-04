@@ -24,7 +24,7 @@
     pointer-events: none;
   }
   .left_section {
-    max-width: 58rem;
+    max-width: 75rem;
 
     .title {
       font-size: 4rem;
@@ -43,6 +43,8 @@
       .list_inner {
         list-style: disc;
         list-style-position: outside;
+        opacity: 80%;
+        font-size: 2rem;
       }
     }
 

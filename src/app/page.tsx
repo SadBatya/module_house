@@ -1,4 +1,4 @@
-// import { SectionMain } from '@/page/page-main';
+import { SectionMain } from '@/page/page-main';
 import { SectionWhatWeBuilding } from '@/page/page-main';
 import { SectionCatalog } from '@/page/page-main';
 import { SectionPromoProject } from '@/page/page-main';
@@ -14,7 +14,7 @@ import { SectionCheckPrice } from '@/page/page-main';
 export default function Home() {
   return (
     <>
-      {/* <SectionMain /> */}
+      <SectionMain />
       <SectionWhatWeBuilding />
       <SectionCatalog />
       <SectionPromoProject />

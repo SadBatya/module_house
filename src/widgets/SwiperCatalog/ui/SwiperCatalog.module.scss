@@ -2,7 +2,7 @@
   position: relative;
   margin-bottom: 10rem;
 
-  @include breakpoint(tablet) {
+  @include breakpoint(desktop) {
     margin-bottom: 5rem;
   }
 
