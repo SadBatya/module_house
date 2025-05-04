@@ -9,12 +9,12 @@ export const Accordion = () => {
 
   return (
     <div className={style.slider}>
-      {houses.map(({ text, id, description, img }) => (
+      {houses.map(({ title, id, description, img }) => (
         <Slide
           activeIndex={activeIndex}
           key={id}
           num={id}
-          text={text}
+          text={title}
           description={description}
           img={img}
           onClick={() => setActiveIndex(id)}

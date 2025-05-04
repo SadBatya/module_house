@@ -96,8 +96,9 @@
       .description {
         font-size: 1.5rem;
         font-weight: 300;
-        transition: opacity 0.6s ease;
+        transition: all 1s ease;
         opacity: 0;
+        transform: translateY(-10px);
 
         @include breakpoint(mobile) {
           font-size: 1.4rem;
@@ -109,8 +110,9 @@
         align-items: center;
         gap: 1rem;
         font-size: 3rem;
-        transition: opacity 0.6s ease;
+        transition: all 1s ease;
         opacity: 0;
+        transform: translateY(-10px);
 
         @include breakpoint(mobile) {
           font-size: 1.6rem;
@@ -118,16 +120,19 @@
 
         .number {
           font-size: 4rem;
-
+          transform: translateY(-10px);
+          transition: all 1s;
           @include breakpoint(desktop) {
             font-size: 3.2rem;
           }
         }
 
         .line {
+          transition: all 1s;
           width: 6.4rem;
           background-color: white;
           height: 1px;
+          transform: translateY(-10px);
         }
       }
     }
@@ -145,13 +150,23 @@
 
       .info {
         .description {
-          transition-delay: 0.3s;
+          transition-delay: 1s;
           opacity: 1;
+          transform: translateY(0);
         }
 
         .title {
-          transition-delay: 0.6s;
+          transition-delay: 1s;
           opacity: 1;
+          transform: translateY(0);
+
+          .number {
+            transform: translateY(0);
+          }
+
+          .line {
+            transform: translateY(0);
+          }
         }
       }
     }
