@@ -1,0 +1,28 @@
+.title {
+  .titleBlock {
+    margin-bottom: 1.5rem;
+  }
+  .color {
+    color: $orange;
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+  }
+  .black {
+    color: $black;
+    font-size: 5rem;
+    font-weight: 500;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 26rem;
+  .text {
+    max-width: 47%;
+    color: black;
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+}
