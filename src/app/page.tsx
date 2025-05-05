@@ -4,7 +4,7 @@ import { SectionCatalog } from '@/page/page-main';
 import { SectionPromoProject } from '@/page/page-main';
 import { SectionAbout } from '@/page/page-main';
 import { SectionGuarantee } from '@/page/page-main';
-import { SectionStructureHouse } from '@/page/page-main';
+// import { SectionStructureHouse } from '@/page/page-main';
 import { SectionSteps } from '@/page/page-main';
 import { SectionControl } from '@/page/page-main';
 import { SectionCheck } from '@/page/page-main';
@@ -20,7 +20,7 @@ export default function Home() {
       <SectionPromoProject />
       <SectionAbout />
       <SectionGuarantee />
-      <SectionStructureHouse />
+      {/* <SectionStructureHouse /> */}
       <SectionSteps />
       <SectionControl />
       <SectionCheck />

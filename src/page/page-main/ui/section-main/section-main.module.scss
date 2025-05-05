@@ -1,16 +1,12 @@
-.main {
-  padding-left: 7.5rem;
+.section {
+  padding-left: 5rem;
   padding-top: 15.7rem;
   padding-bottom: 10rem;
-  background-image: url('./assets/bg-main.png');
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: $black;
   position: relative;
-  max-width: 1920px;
   margin-bottom: 16rem;
+  max-width: 100%;
+  padding-right: 0;
 
   &::after {
     z-index: 20;
@@ -23,33 +19,79 @@
     background: linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent);
     pointer-events: none;
   }
-  .left_section {
-    max-width: 75rem;
 
-    .title {
-      font-size: 4rem;
-      font-weight: 500;
-      margin-bottom: 27px;
+  @include breakpoint(mobile) {
+    padding-left: 2rem;
+    padding-top: 12rem;
+
+    &::after {
+      display: none;
     }
+  }
 
-    .list {
-      display: flex;
+  .section_inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 204rem;
+    margin: auto;
+    width: 100%;
+
+    @include breakpoint(mobile) {
       flex-direction: column;
-      gap: 2.3rem;
-      font-size: 15px;
-      margin-bottom: 5.9rem;
-      padding-left: 2rem;
-
-      .list_inner {
-        list-style: disc;
-        list-style-position: outside;
-        opacity: 80%;
-        font-size: 2rem;
-      }
+      gap: 6rem;
     }
 
-    .button {
-      font-weight: 700;
+    .left_section {
+      max-width: 75rem;
+
+      .title {
+        font-size: 4rem;
+        font-weight: 500;
+        margin-bottom: 2.7rem;
+
+        @include breakpoint(desktop) {
+          font-size: 2.5rem;
+        }
+
+        @include breakpoint(tablet) {
+          font-size: 2.2rem;
+        }
+      }
+
+      .list {
+        display: flex;
+        flex-direction: column;
+        gap: 2.3rem;
+        font-size: 1.5rem;
+        margin-bottom: 5.9rem;
+        padding-left: 2rem;
+
+        @include breakpoint(mobile) {
+          gap: 1rem;
+          margin-bottom: 3rem;
+        }
+
+        .list_inner {
+          list-style: disc;
+          list-style-position: outside;
+          opacity: 80%;
+          font-size: 2rem;
+
+          @include breakpoint(desktop) {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .button {
+        font-weight: 700;
+        text-wrap: nowrap;
+
+        @include breakpoint(desktop) {
+          padding: 1.6rem 4rem;
+          font-size: 1.4rem;
+        }
+      }
     }
   }
 }
