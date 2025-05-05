@@ -16,6 +16,10 @@
     align-items: center;
     padding: 2rem 5rem;
 
+    @include breakpoint(mobile) {
+      padding: 2rem;
+    }
+
     .logo {
       cursor: pointer;
     }
