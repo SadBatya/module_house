@@ -1,0 +1,68 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 4rem;
+  border-radius: 12px;
+  background-color: $gray-light;
+  color: $black;
+  max-height: 33.2rem;
+
+  .card_info {
+    max-width: 38rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .rating {
+    }
+
+    .name_date {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .name {
+        font-weight: 600;
+        font-size: 2rem;
+      }
+
+      .date {
+        font-size: 1.6rem;
+        opacity: 50%;
+      }
+    }
+
+    .description {
+      font-size: 1.6rem;
+    }
+
+    .button {
+      border: none;
+      width: fit-content;
+      background-color: transparent;
+      font-size: 1.6rem;
+      font-weight: 600;
+      opacity: 60%;
+      margin-bottom: 2rem;
+      position: relative;
+      cursor: pointer;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        width: 0;
+        transition: all 0.5s;
+        height: 1px;
+        background-color: $black;
+        left: 0;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
