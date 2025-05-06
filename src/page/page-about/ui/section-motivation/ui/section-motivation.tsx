@@ -1,23 +1,36 @@
-import motivationData from '../model/data';
 import style from './section-motivation.module.scss';
-import { Section, Title } from '@/shared/ui';
+import { Section, Title, P } from '@/shared/ui';
 
 export const SectionMotivation = () => (
   <Section>
     <Title uppercase className={style.title}>
-      <div className={style.text}>
-        <span className={style.color}>Почему </span>
-        <span className={style.black}>заказать проект и</span>
-      </div>
-      <span className={style.color}>строительство </span>
-      <span className={style.black}>лучше у нас? </span>
+      <span className={style.color}>Почему</span>
+      <span className={style.black}> заказать проект и </span>
+      <span className={style.color}>строительство</span>
+      <span className={style.black}> лучше у нас?</span>
     </Title>
     <div className={style.container}>
-      {motivationData.map((text, index) => (
-        <div key={index} className={style.text}>
-          {text}
-        </div>
-      ))}
+      <P className={style.text}>
+        Компания была основана в 2006 году, и с тех пор мы осуществляем
+        загородное строительство брусовых и каркасных домов &quot;под ключ&quot;
+        в Ленинградской области. Множество семей приобрело уютное и комфортное
+        жильё в результате сотрудничества с нашей компанией. Надеемся, что в
+        дальнейшем сможем помочь и остальным жителям Санкт-Петербурга и Лен.
+        обл., мечтающим о собственном загородном жилье. <br /> У нас имеется
+        собственное производство полного цикла каркасных и брусовых домов, с
+        возможностью молниеносной доставки по Ленинградской области или в любой
+        другой регион России. Работаем начиная с лесозаготовки и заканчивая
+        готовым домом под ключ.
+      </P>
+      <P className={style.text}>
+        Благодаря этому они возводятся в максимально быстрые сроки и стоят
+        недорого. <br /> Кроме того, мы предоставляем сезонные скидки,
+        устраиваем акции. Соответствующая информация отображается на сайте
+        компании. <br /> Как это происходит? <br /> Хотите построить дом в
+        Ленинградской области быстро и недорого? Заходите на сайт нашей
+        компании, выбирайте понравившееся вам проектное решение, звоните по
+        указанному на сайте телефону.
+      </P>
     </div>
   </Section>
 );
