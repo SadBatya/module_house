@@ -3,22 +3,110 @@
   align-items: flex-start;
   gap: 2rem;
 
+  @include breakpoint(tablet) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .title {
     max-width: 40rem;
     width: 100%;
     border-right: 1px solid $black;
+    margin-bottom: 0;
+
+    @include breakpoint(tablet) {
+      border-right: 0;
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  .description {
+    @include breakpoint(tablet) {
+      text-align: center;
+    }
   }
 
   .button {
     text-wrap: nowrap;
     font-size: 1.6rem;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 2rem;
+    }
   }
 }
 
 .navigation {
   display: flex;
   color: $black;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 55rem;
+  transform: translateY(-8rem);
+  position: relative;
+  z-index: 10;
 
-  .slide_number {
+  @include breakpoint(desktop) {
+    max-width: 35rem;
+  }
+
+  @include breakpoint(mobile) {
+    transform: translateY(-8rem) translateX(-50%);
+    left: 50%;
+    padding: 0 2rem;
+  }
+
+  .slide_numbers {
+    font-size: 8rem;
+    opacity: 10%;
+
+    @include breakpoint(desktop) {
+      font-size: 6rem;
+    }
+
+    @include breakpoint(mobile) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .swiper_buttons {
+    display: flex;
+    gap: 3rem;
+    padding-top: 2rem;
+
+    @include breakpoint(mobile) {
+      padding-top: 0;
+    }
+
+    .prev_button,
+    .next_button {
+      display: block;
+      background-image: url('./assets/arrow.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 5.5rem;
+      height: 2rem;
+      cursor: pointer;
+
+      @include breakpoint(mobile) {
+        background-color: white;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        background-image: url('./assets/arow-black.svg');
+        background-size: 60%;
+      }
+    }
+
+    .prev_button {
+      transform: rotate(180deg);
+
+      @include breakpoint(mobile) {
+        display: none;
+      }
+    }
   }
 }

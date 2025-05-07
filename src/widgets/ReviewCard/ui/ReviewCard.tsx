@@ -1,24 +1,38 @@
 import style from './ReviewCard.module.scss';
-import Image from 'next/image';
-import avatar from './assets/avatar.png';
+import Image, { type StaticImageData } from 'next/image';
 import house from './assets/house.png';
+import starIcon from './assets/star.svg';
 
-export const ReviewCard = () => (
+interface Props {
+  rating: number;
+  date: string;
+  username: string;
+  review: string;
+  avatar: StaticImageData;
+}
+
+export const ReviewCard = ({
+  rating,
+  date,
+  username,
+  review,
+  avatar,
+}: Props) => (
   <div className={style.card}>
     <div className={style.card_info}>
-      <div className={style.rating}></div>
-      <div className={style.name_date}>
-        <span className={style.name}>Алина Баталова</span>
-        <span className={style.date}>11.03.2021</span>
+      <div className={style.rating}>
+        {new Array(rating).fill(null).map((_, index) => (
+          <Image src={starIcon} alt="" key={index} />
+        ))}
       </div>
-      <p className={style.description}>
-        Я искал компанию, которая мне быстро построит дом. Я точно знал, что не
-        хочу кирпичные, монолитные дома, т.к. это долго и дорого. Выбрал
-        несколько компаний, ездил на встречи. Остановился на Мыдома
-      </p>
+      <div className={style.name_date}>
+        <span className={style.name}>{username}</span>
+        <span className={style.date}>{date}</span>
+      </div>
+      <p className={style.description}>{review}</p>
       <button className={style.button}>Читать далее...</button>
-      <Image src={avatar} alt="" />
+      <Image className={style.avatar} src={avatar} alt="" />
     </div>
-    <Image src={house} alt="" />
+    <Image className={style.img} src={house} alt="" />
   </div>
 );
