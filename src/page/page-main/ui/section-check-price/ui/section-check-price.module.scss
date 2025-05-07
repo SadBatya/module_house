@@ -1,12 +1,16 @@
 .section {
-  background-color: $gray-light;
   border-radius: 1.2rem;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  background-color: $gray-light;
 
   @include breakpoint(tablet) {
     justify-content: center;
+  }
+
+  @include breakpoint(mobile) {
+    background-color: transparent;
   }
 
   .form {
@@ -17,7 +21,9 @@
     }
 
     @include breakpoint(mobile) {
-      padding: 5rem 0;
+      padding: 5rem 2rem;
+      background-color: $gray-light;
+      border-radius: 1.2rem;
     }
 
     .title {
