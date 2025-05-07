@@ -5,6 +5,10 @@
   justify-content: space-between;
   overflow: hidden;
 
+  @include breakpoint(tablet) {
+    justify-content: center;
+  }
+
   .form {
     padding: 4rem 0 0 5rem;
 
@@ -23,6 +27,7 @@
       @include breakpoint(tablet) {
         font-size: 3.2rem;
         margin-bottom: 4rem;
+        text-align: center;
       }
 
       @include breakpoint(mobile) {

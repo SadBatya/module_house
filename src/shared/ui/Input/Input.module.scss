@@ -3,7 +3,7 @@
   flex-direction: column;
   max-width: 34rem;
 
-  @include breakpoint(mobile) {
+  @include breakpoint(tablet) {
     max-width: 100%;
   }
 
