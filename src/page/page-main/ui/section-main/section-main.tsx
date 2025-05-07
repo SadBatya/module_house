@@ -1,10 +1,9 @@
 import style from './section-main.module.scss';
 import { Button } from '@/shared/ui/Button/Button';
 import { Carousel } from '@/widgets/Carousel';
-import { Section } from '@/shared/ui';
 
 export const SectionMain = () => (
-  <Section className={style.section}>
+  <section className={style.section}>
     <div className={style.section_inner}>
       <div className={style.left_section}>
         <h1 className={style.title}>
@@ -28,5 +27,5 @@ export const SectionMain = () => (
       </div>
       <Carousel />
     </div>
-  </Section>
+  </section>
 );
