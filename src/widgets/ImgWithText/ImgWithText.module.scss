@@ -26,6 +26,11 @@
       flex: 1;
       max-width: 38.5rem;
     }
+
+    @include breakpoint(mobile) {
+      flex: 1;
+      max-width: 25rem;
+    }
   }
 
   .info {
