@@ -6,6 +6,15 @@
   position: relative;
   max-width: 100%;
   padding-right: 0;
+  margin-bottom: 16rem;
+
+  @include breakpoint(desktop) {
+    margin-bottom: 8rem;
+  }
+
+  @include breakpoint(mobile) {
+    margin-bottom: 4rem;
+  }
 
   &::after {
     z-index: 20;
