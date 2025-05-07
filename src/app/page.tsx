@@ -6,7 +6,7 @@ import {
   SectionAbout,
   SectionGuarantee,
   SectionStructureHouse,
-  // SectionSteps,
+  SectionSteps,
   SectionControl,
   SectionCheck,
   SectionOurProject,
@@ -24,7 +24,7 @@ export default function Home() {
       <SectionAbout />
       <SectionGuarantee />
       <SectionStructureHouse />
-      {/* <SectionSteps /> */}
+      <SectionSteps />
       <SectionControl />
       <SectionCheck />
       <SectionOurProject />

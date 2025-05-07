@@ -28,7 +28,7 @@ export const SectionSteps = () => {
         <div className={style.container_text}>
           <Title>Этапы возведения вашего будущего дома</Title>
           <Image className={style.img_mob} src={insideMobPng} alt="" />
-          <ul>
+          <ul className={style.list}>
             {listData.map(({ title, subtext }, index) => (
               <ListItem
                 index={index}

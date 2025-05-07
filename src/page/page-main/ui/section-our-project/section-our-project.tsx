@@ -8,7 +8,7 @@ export const SectionOurProject = () => (
   <>
     <Section className={style.section}>
       <Title center uppercase>
-        Наши проекты
+        Наши построенные дома
       </Title>
       <P center className={style.description}>
         За 15 лет работы мы построили более 2000 домов <br /> Вот некоторые из

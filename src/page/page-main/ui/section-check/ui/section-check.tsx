@@ -9,7 +9,7 @@ import style from './section-check.module.scss';
 export const SectionCheck = () => (
   <Section className={style.section}>
     <div className={style.info}>
-      <Title className={style.title}>Заказать проект</Title>
+      <Title className={style.title}>Заказать просчет проекта</Title>
       <Image className={style.img_tablet} alt="house-project" src={housePgn} />
       <P className={style.description}>
         Вы можете создать проект дома вместе с нашими конструкторами и
