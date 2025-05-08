@@ -1,6 +1,7 @@
 .section {
   display: flex;
   align-items: flex-end;
+  overflow: hidden;
 
   @include breakpoint(desktop) {
     align-items: center;

@@ -2,7 +2,7 @@
   display: flex;
   background-color: $gray-opacity;
   -webkit-tap-highlight-color: transparent;
-  // touch-action: manipulation;
+  touch-action: manipulation;
 
   @include breakpoint(desktop) {
     flex-direction: column;
