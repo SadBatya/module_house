@@ -1,6 +1,7 @@
 import { Section } from '@/shared/ui';
 import aboutPng from './assets/about.jpg';
 import { ImgWithText } from '@/widgets/ImgWithText/ImgWithText';
+import style from './section-about.module.scss';
 
 export const SectionAbout = () => (
   <Section>
@@ -18,7 +19,7 @@ export const SectionAbout = () => (
           Мы собрали таких мастеров. Теперь они работают для вас.
           <br />
           <br />
-          <h3>Основатель Денис Мозговой</h3>
+          <span className={style.description}>Основатель Денис Мозговой</span>
         </>
       }
     />

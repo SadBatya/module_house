@@ -95,6 +95,7 @@
       .button {
         font-weight: 700;
         text-wrap: nowrap;
+        color: $black;
 
         @include breakpoint(desktop) {
           padding: 1.6rem 4rem;
