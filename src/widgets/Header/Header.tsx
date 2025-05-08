@@ -28,8 +28,8 @@ export const Header = () => {
 
         <nav className={style.navigation}>
           <ul className={style.list}>
-            <Link href={INTERNAL_ROUTES.PROJECTS} className={style.link}>
-              Проекты
+            <Link href={INTERNAL_ROUTES.CATALOG} className={style.link}>
+              Каталог
             </Link>
             <Link href={INTERNAL_ROUTES.ABOUT} className={style.link}>
               О нас
@@ -64,8 +64,8 @@ export const Header = () => {
         >
           <nav className={style.nav_list}>
             <ul className={style.list_inner}>
-              <Link href={INTERNAL_ROUTES.PROJECTS} className={style.list_item}>
-                Проекты
+              <Link href={INTERNAL_ROUTES.CATALOG} className={style.list_item}>
+                Каталог
               </Link>
               <Link href={INTERNAL_ROUTES.ABOUT} className={style.list_item}>
                 О нас

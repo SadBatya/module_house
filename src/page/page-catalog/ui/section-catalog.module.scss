@@ -1,0 +1,13 @@
+.section {
+  max-width: 116rem;
+
+  .description {
+    margin-bottom: 4rem;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+}

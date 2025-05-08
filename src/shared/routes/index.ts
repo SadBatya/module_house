@@ -3,7 +3,7 @@ import { PHONE, EMAIL, TELEGRAM } from '../consts/consts';
 export const INTERNAL_ROUTES = {
   HOME: '/',
   ABOUT: '/about',
-  PROJECTS: '/projects',
+  CATALOG: '/catalog',
   FEEDBACK: '/feedback',
 };
 
