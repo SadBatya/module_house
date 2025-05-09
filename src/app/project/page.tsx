@@ -1,5 +1,6 @@
 import { Breadcrumbs } from '@/shared/ui';
 import { INTERNAL_ROUTES } from '@/shared/routes';
+import { SectionPreview } from '@/page/page-project';
 
 export default function Catalog() {
   return (
@@ -16,6 +17,7 @@ export default function Catalog() {
           },
         ]}
       />
+      <SectionPreview />
     </>
   );
 }
