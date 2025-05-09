@@ -10,7 +10,7 @@ interface Props {
 }
 
 export const CatalogCard = ({ image, model, size, price }: Props) => (
-  <Link href={''} className={style.card}>
+  <Link href={'/project'} className={style.card}>
     <Image className={style.img} src={image} alt="" />
     <div className={style.info}>
       <div className={style.info_inner}>

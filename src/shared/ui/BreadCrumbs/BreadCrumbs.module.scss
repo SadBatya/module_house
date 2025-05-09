@@ -17,4 +17,21 @@
     padding-bottom: 0;
     margin-bottom: 4rem;
   }
+
+  .separator {
+    opacity: 50%;
+  }
+
+  .link {
+    opacity: 50%;
+    transition: 0.3s all;
+
+    &:hover {
+      opacity: 100%;
+    }
+  }
+
+  .active_link {
+    opacity: 100%;
+  }
 }
