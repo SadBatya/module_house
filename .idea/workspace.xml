@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="688969f8-db23-43c8-934e-4b2df8177625" name="Changes" comment="Refactor: merged with main">
-      <change afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-motivation/ui/section-motivation.tsx" afterDir="false" />
+    <list default="true" id="688969f8-db23-43c8-934e-4b2df8177625" name="Changes" comment="refactor: merged with main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/page-about/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-production/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-production/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-production/ui/section-production.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-production/ui/section-production.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +43,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -191,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1746298426706</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="refactor: merged with main">
+      <created>1746892488382</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1746892488382</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +218,7 @@
     <MESSAGE value="feat: ts lint" />
     <MESSAGE value="Refactor: added text" />
     <MESSAGE value="Refactor: merged with main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor: merged with main" />
+    <MESSAGE value="refactor: merged with main" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: merged with main" />
   </component>
 </project>
