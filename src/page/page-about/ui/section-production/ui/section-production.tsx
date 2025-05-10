@@ -2,11 +2,12 @@ import Image from 'next/image';
 import style from './section-production.module.scss';
 import { cardData } from '@/page/page-about/ui/section-production/model/data';
 import { Section, Title } from '@/shared/ui';
+import { Span } from '@/shared/ui/Span/Span';
 
 export const SectionProduction = () => (
   <Section>
     <Title uppercase className={style.title}>
-      Наше <span className={style.color}>производство</span>
+      Наше <Span>производство</Span>
     </Title>
     <div className={style.container}>
       {cardData.map(({ title, img, text }, index) => (

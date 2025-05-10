@@ -1,12 +1,13 @@
 import style from './section-motivation.module.scss';
 import { Section, Title, P } from '@/shared/ui';
+import { Span } from '@/shared/ui/Span/Span';
 
 export const SectionMotivation = () => (
   <Section>
     <Title uppercase className={style.title}>
-      <span className={style.color}>Почему</span>
+      <Span>Почему</Span>
       <span className={style.black}> заказать проект и </span>
-      <span className={style.color}>строительство</span>
+      <Span>строительство</Span>
       <span className={style.black}> лучше у нас?</span>
     </Title>
     <div className={style.container}>

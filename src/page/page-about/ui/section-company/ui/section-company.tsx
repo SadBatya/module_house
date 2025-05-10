@@ -3,12 +3,13 @@ import style from './section-company.module.scss';
 import man from './assets/man.svg';
 import { Title } from '@/shared/ui';
 import { Section } from '@/shared/ui';
+import { Span } from '@/shared/ui/Span/Span';
 export const SectionCompany = () => (
   <Section className={style.section}>
     <div className={style.sectionLeft}>
-      <Title uppercase >
+      <Title uppercase>
         Компания <br />
-        <span className={style.title_color}>«МЫ ДОМА»</span>
+        <Span>«МЫ ДОМА»</Span>
       </Title>
 
       <h3 className={style.description}>

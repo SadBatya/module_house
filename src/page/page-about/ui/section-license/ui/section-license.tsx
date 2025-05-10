@@ -6,12 +6,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { Span } from '@/shared/ui/Span/Span';
 
 export const SectionLicense = () => {
   return (
     <Section className={style.section}>
       <Title uppercase className={style.title}>
-        <span className={style.title_color}>ЛиЦЕНЗИИ </span> И ГОСТ
+        <Span>ЛиЦЕНЗИИ </Span> И ГОСТ
       </Title>
       <Swiper
         spaceBetween={20}
