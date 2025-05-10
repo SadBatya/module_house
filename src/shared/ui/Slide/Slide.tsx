@@ -1,13 +1,27 @@
 import Image from 'next/image';
 import style from './Slide.module.scss';
-import { Props } from './model/types';
 import clsx from 'clsx';
 
-export const Slide = ({ num, text, activeIndex, onClick }: Props) => {
+export interface Props {
+  num: number;
+  text: string;
+  description: string;
+  img: string;
+  activeIndex: number;
+  onClick: () => void;
+}
+
+export const Slide = ({
+  num,
+  text,
+  activeIndex,
+  onClick,
+  description,
+}: Props) => {
   return (
     <div className={style.slide} onClick={onClick}>
       <div className={style.grayBlock}>
-        <div className={style.title}>Дома из бревна</div>
+        <div className={style.title}>{text}</div>
         <div className={style.line} />
         <div className={style.number}>0{num}</div>
       </div>
@@ -25,9 +39,7 @@ export const Slide = ({ num, text, activeIndex, onClick }: Props) => {
           alt={text}
         />
         <div className={style.info}>
-          <div className={style.description}>
-            Роскошный панорамный вид, тепло и энергоэффективность
-          </div>
+          <div className={style.description}>{description}</div>
           <div
             className={clsx(style.title, {
               [style.active]: activeIndex === num,
@@ -36,7 +48,7 @@ export const Slide = ({ num, text, activeIndex, onClick }: Props) => {
           >
             <div className={style.number}>0{num}</div>
             <div className={style.line} />
-            <div className={style.title}>Дома из бревна</div>
+            <div className={style.title}>{text}</div>
           </div>
         </div>
       </div>

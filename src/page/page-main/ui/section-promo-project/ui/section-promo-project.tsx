@@ -9,7 +9,7 @@ export const SectionPromoProject = () => (
   <Section>
     <div className={style.container}>
       <div className={style.card}>
-        <Title className={style.title}>Карточка промо-проекта</Title>
+        <Title className={style.title}>Проект&nbsp;«У&nbsp;Озера»</Title>
         <Image className={style.img_mobile} src={housePng} alt="house" />
         <div className={style.name}>
           <h4 className={style.model}>Модульный A-frame дом</h4>
@@ -25,10 +25,11 @@ export const SectionPromoProject = () => (
           </li>
         </ul>
         <p className={style.description}>
-          Небольшой загородный дом с террасой, предназначенный для
-          круглогодичного проживания на природе
+          Скачайте проект «У озера» — и услышите, как шумит камыш за окном. Дом
+          для пары, которая мечтает о тишине. Чтобы по утрам видеть, как озеро
+          подмигивает солнцу
         </p>
-        <Button className={style.button}>Подробнее</Button>
+        <Button className={style.button}>Скачать проект</Button>
       </div>
       <Image className={style.img} src={housePng} alt="house" />
     </div>

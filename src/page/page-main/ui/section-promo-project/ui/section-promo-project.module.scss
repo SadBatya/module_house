@@ -1,6 +1,12 @@
 .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+
+  @include breakpoint(tablet) {
+    flex-direction: column;
+  }
 
   @include breakpoint(mobile) {
     justify-content: center;
@@ -10,11 +16,12 @@
     max-width: 28rem;
     color: black;
 
-    @include breakpoint(mobile) {
+    @include breakpoint(tablet) {
       max-width: 100%;
     }
 
     .title {
+      line-height: 120%;
       @include breakpoint(tablet) {
         margin-bottom: 2rem;
       }
@@ -121,11 +128,8 @@
   }
 
   .img {
-    width: 65%;
     height: auto;
-    position: absolute;
-    right: 0;
-
+    width: 100%;
     @include breakpoint(mobile) {
       display: none;
     }

@@ -7,6 +7,16 @@
   text-decoration: none;
 }
 
+a {
+  color: $black;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  color: $black;
+}
+
 input {
   border: none;
   outline: none;

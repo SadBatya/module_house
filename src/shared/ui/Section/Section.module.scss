@@ -9,6 +9,7 @@
   }
 
   @include breakpoint(mobile) {
+    padding: 0 2rem;
     margin-bottom: 4rem;
   }
 }

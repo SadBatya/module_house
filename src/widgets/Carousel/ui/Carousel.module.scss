@@ -1,6 +1,23 @@
 .swiper_container {
-  max-width: 80rem;
+  max-width: 90rem;
+  max-height: 39.9rem;
   position: relative;
+
+  @include breakpoint(laptop) {
+    max-width: 60rem;
+  }
+
+  @include breakpoint(desktop) {
+    max-width: 44rem;
+  }
+
+  @include breakpoint(tablet) {
+    max-width: 32rem;
+  }
+
+  @include breakpoint(mobile) {
+    max-width: 100%;
+  }
 
   .title {
     margin-bottom: 2.2rem;
@@ -22,5 +39,16 @@
     background-position: center;
     background-repeat: no-repeat;
     z-index: 10;
+
+    @include breakpoint(desktop) {
+      width: 4.5rem;
+      height: 4.5rem;
+      background-size: 50%;
+      top: 35%;
+    }
+
+    @include breakpoint(mobile) {
+      display: none;
+    }
   }
 }

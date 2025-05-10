@@ -1,0 +1,18 @@
+.section {
+  max-width: 116rem;
+  margin-bottom: 12rem;
+
+  .description {
+    margin-bottom: 4rem;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    @include breakpoint(mobile) {
+      flex-wrap: wrap;
+    }
+  }
+}

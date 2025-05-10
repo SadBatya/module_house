@@ -4,6 +4,10 @@
   line-height: 140%;
   color: black;
   opacity: 50%;
+
+  @include breakpoint(desktop) {
+    font-size: 1.6rem;
+  }
 }
 
 .center {

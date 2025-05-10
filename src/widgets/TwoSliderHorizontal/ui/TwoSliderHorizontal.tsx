@@ -16,6 +16,7 @@ export const TwoSliderHorizontal = () => {
         slidesPerView={4}
         spaceBetween={30}
         loop={true}
+        allowTouchMove={false}
         autoplay={{
           delay: 0,
           disableOnInteraction: false,
@@ -44,6 +45,7 @@ export const TwoSliderHorizontal = () => {
         ))}
       </Swiper>
       <Swiper
+        allowTouchMove={false}
         modules={[Autoplay]}
         slidesPerView={4}
         spaceBetween={30}
