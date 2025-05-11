@@ -1,2 +1,1 @@
-export { SectionPreview } from './ui/section-preview';
 export { SectionDescription } from './ui/section-description';

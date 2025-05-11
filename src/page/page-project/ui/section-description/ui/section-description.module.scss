@@ -1,0 +1,28 @@
+.first_section {
+  .description {
+    opacity: 100%;
+    margin-bottom: 6rem;
+  }
+}
+
+.second_section {
+  .list {
+    column-count: 2;
+    column-gap: 4rem;
+
+    .list_item {
+      color: $black;
+      display: flex;
+      font-size: 2rem;
+      gap: 3rem;
+      display: flex;
+      align-items: center;
+
+      .list_number {
+        color: $orange;
+        font-size: 5rem;
+        min-width: 3rem;
+      }
+    }
+  }
+}
