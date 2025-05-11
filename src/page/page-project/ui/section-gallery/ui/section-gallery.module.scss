@@ -1,0 +1,68 @@
+.section {
+  max-width: 100%;
+  background-color: $orange;
+  padding: 5rem 0;
+
+  .section_inner {
+    max-width: 144rem;
+    margin: 0 auto;
+
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 5rem;
+
+      .title {
+        margin-bottom: 0;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 2rem;
+
+        .button {
+          padding: 0.5rem 1rem;
+          cursor: pointer;
+          transition: all 0.3s;
+          &:hover {
+            background-color: rgba($color: $black, $alpha: 0.05);
+          }
+        }
+
+        .swiper_button_prev,
+        .swiper_button_next {
+          background: url('./assets/arrow.svg');
+          width: 56px;
+          height: 35px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-color: transparent;
+          background-size: contain;
+          border: none;
+          cursor: pointer;
+
+          @include breakpoint(tablet) {
+            width: 42px;
+          }
+
+          @include breakpoint(mobile) {
+            width: 27px;
+          }
+        }
+
+        .swiper_button_prev {
+          transform: rotate(180deg);
+        }
+
+        .button_active {
+          background-color: $white;
+
+          &:hover {
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
+}

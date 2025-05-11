@@ -1,6 +1,10 @@
 import { Breadcrumbs } from '@/shared/ui';
 import { INTERNAL_ROUTES } from '@/shared/routes';
-import { SectionPreview, SectionDescription } from '@/page/page-project';
+import {
+  SectionPreview,
+  SectionDescription,
+  SectionGallery,
+} from '@/page/page-project';
 
 export default function Catalog() {
   return (
@@ -18,6 +22,7 @@ export default function Catalog() {
         ]}
       />
       <SectionPreview />
+      <SectionGallery />
       <SectionDescription />
     </>
   );
