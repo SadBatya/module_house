@@ -1,9 +1,10 @@
 import { Input } from '@/shared/ui/Input/Input';
 import style from './Form.module.scss';
 import { Button } from '@/shared/ui';
+import clsx from 'clsx';
 
-export const Form = () => (
-  <form className={style.form}>
+export const Form = ({ className }: { className?: string }) => (
+  <form className={clsx(style.form, className)}>
     <Input placeholder={'Имя'} labelText={'Ваше имя'} />
     <Input placeholder={'Телефон'} labelText={'Телефон'} />
     <Input placeholder={'Telegram'} labelText={'Ваш Telegram'} />
