@@ -2,6 +2,7 @@ import { SectionCompany } from '@/page/page-about/ui/section-company';
 import { SectionProduction } from '@/page/page-about/ui/section-production';
 import { SectionLicense } from '@/page/page-about/ui/section-license';
 import { SectionMotivation } from '@/page/page-about/ui/section-motivation';
+import { SectionReviews } from '@/page/page-about/ui/section-reviews';
 
 export default function About() {
   return (
@@ -10,6 +11,7 @@ export default function About() {
       <SectionProduction />
       <SectionLicense />
       <SectionMotivation />
+      <SectionReviews />
     </>
   );
 }

@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="688969f8-db23-43c8-934e-4b2df8177625" name="Changes" comment="refactor: merged with main">
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/Span/Span.style.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/Span/Span.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-reviews/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-reviews/ui/section-reviews.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-reviews/ui/section-reviews.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-company/ui/section-company.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-company/ui/section-company.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-license/ui/section-license.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-license/ui/section-license.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-motivation/model/data.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-motivation/ui/section-motivation.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-motivation/ui/section-motivation.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-motivation/ui/section-motivation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-motivation/ui/section-motivation.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-production/ui/section-production.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-production/ui/section-production.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-about/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript JSX File" />
         <option value="SCSS File" />
         <option value="TypeScript File" />
-        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>

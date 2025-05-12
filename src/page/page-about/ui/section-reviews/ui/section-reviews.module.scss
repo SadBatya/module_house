@@ -1,0 +1,41 @@
+.top_part {
+  display: flex;
+  justify-content: space-between;
+  .text_left_part {
+    color: black;
+    font-size: 5rem;
+    font-weight: normal;
+    border-right: black 0.2rem solid;
+    max-width: 44rem;
+    flex-wrap: wrap;
+    line-height: 100%;
+  }
+  .text_right_part {
+    align-content: center;
+    color: black;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 140%;
+    flex-wrap: wrap;
+    max-width: 38rem;
+    opacity: 60%;
+  }
+  .button {
+    justify-content: center;
+    text-align: left;
+    background-color: #ffcc1b;
+    border-radius: 0.4rem;
+    padding: 2rem;
+    max-width: 30rem;
+    max-height: 7rem;
+    .text_1 {
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 140%;
+    }
+    .text_2 {
+      display: block;
+      opacity: 33%;
+    }
+  }
+}
