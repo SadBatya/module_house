@@ -1,3 +1,3 @@
 import { CheckPriceForm } from '@/widgets/CheckPriceForm';
 
-export const SectionCheckPrice = () => <CheckPriceForm />;
+export const SectionForm = () => <CheckPriceForm />;
