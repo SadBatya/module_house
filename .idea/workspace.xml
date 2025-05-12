@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="688969f8-db23-43c8-934e-4b2df8177625" name="Changes" comment="refactor: merged with main">
-      <change afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-reviews/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-reviews/ui/section-reviews.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-reviews/ui/section-reviews.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/page-about/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-company/ui/section-company.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-company/ui/section-company.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1746892488382</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="refactor: merged with main">
+      <created>1747074750878</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1747074750878</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
