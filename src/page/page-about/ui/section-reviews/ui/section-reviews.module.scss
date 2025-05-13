@@ -31,10 +31,9 @@
     border-radius: 0.4rem;
     width: 30rem;
     max-height: 7rem;
-
+    font-weight: 400;
+    font-size: 1.6rem;
     .text_1 {
-      font-weight: 400;
-      font-size: 1.6rem;
       line-height: 140%;
     }
   }
@@ -58,6 +57,7 @@
       margin-bottom: 4rem;
       .star {
         margin-bottom: 2rem;
+        margin-right: 0.5rem;
       }
       .name_date {
         display: flex;
@@ -84,6 +84,7 @@
         color: black;
         font-size: 1.7rem;
         font-weight: 400;
+        overflow-y: auto;
       }
 
       .avatar {
@@ -155,5 +156,34 @@
     .arrow_right {
       transform: scale(4);
     }
+  }
+}
+@media (max-width: 480px) {
+  .top_part .text_left_part {
+    font-size: 2rem;
+    flex-direction: row;
+  }
+  .top_part .button {
+    font-size: 1rem;
+  }
+
+  .main_card_section .card_section .info_text {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .top_part {
+    flex-direction: row;
+
+    .text_left_part {
+      font-size: 2rem;
+      border-right: black 0.2rem solid;
+      border-bottom: none;
+    }
+  }
+
+  .main_card_section {
+    height: 40rem;
   }
 }
