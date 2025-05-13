@@ -7,6 +7,7 @@ interface Props {
   className?: string;
   type?: 'submit' | 'reset' | 'button';
   disabled?: boolean;
+  onClick?: () => void;
 }
 
 export const Button = ({
@@ -15,11 +16,13 @@ export const Button = ({
   className,
   type = 'button',
   disabled,
+  onClick,
 }: Props) => {
   const styleObj: React.CSSProperties = {};
 
   return (
     <button
+      onClick={onClick}
       type={type}
       style={styleObj}
       disabled={disabled}

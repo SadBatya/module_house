@@ -5,15 +5,15 @@ import style from './section-reviews.module.scss';
 import { reviews } from '../model/data';
 import { ReviewCard } from '@/widgets/ReviewCard';
 import { useRef, useState } from 'react';
-
 import { EffectFade } from 'swiper/modules';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Swiper as SwiperType } from 'swiper/types';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
+import { useModal } from '@/shared/hooks/useModal';
 
 export const SectionReviews = () => {
+  const { openModal } = useModal();
   const swiperRef = useRef<SwiperType | null>(null);
   const [currentSlide, setCurrentSlide] = useState<number>(1);
 
@@ -37,7 +37,9 @@ export const SectionReviews = () => {
           Реальные отзывы о нашей компании вы можете посмотреть на независимых
           сайтах
         </P>
-        <Button className={style.button}>Подобрать проект для себя</Button>
+        <Button onClick={openModal} className={style.button}>
+          Подобрать проект для себя
+        </Button>
       </div>
 
       <Swiper

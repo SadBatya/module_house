@@ -1,0 +1,32 @@
+.modal_overlay {
+  background-color: $black-opacity;
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modal_content {
+    background-color: $bg-gray;
+    width: fit-content;
+    padding: 4rem;
+    border-radius: 1rem;
+    position: relative;
+
+    .close_button {
+      position: absolute;
+      background-image: url('./assets/close-icon.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      top: 1rem;
+      right: 2rem;
+      cursor: pointer;
+      width: 3rem;
+      height: 4rem;
+    }
+  }
+}
