@@ -13,6 +13,15 @@
   &:hover {
     transform: scale(1.02);
   }
+
+  &:disabled {
+    background-color: $bg-gray;
+    color: $gray;
+    cursor: not-allowed;
+    &:hover {
+      transform: none;
+    }
+  }
 }
 
 .transparent {

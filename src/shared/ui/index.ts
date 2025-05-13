@@ -7,3 +7,4 @@ export { TelegramIcon } from './Icons/TelegramIcon';
 export { WhatsAppIcon } from './Icons/WhatsAppIcon';
 export { Breadcrumbs } from './BreadCrumbs/BreadCrumbs';
 export { CatalogCard } from './CatalogCard/CatalogCard';
+export { Error } from './Error/Error';
