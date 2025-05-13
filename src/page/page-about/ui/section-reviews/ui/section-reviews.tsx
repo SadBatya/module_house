@@ -51,13 +51,14 @@ export const SectionReviews = () => {
               <span className={style.date}>{currentReview.date}</span>
             </div>
             <p className={style.text_review}>{currentReview.review}</p>
-            <button className={style.button_text}>Читать далее ..... </button>
+
             <Image
               className={style.avatar}
               alt={'Avatarka'}
               src={currentReview.avatar}
             />
           </div>
+          <button className={style.button_text}>Читать далее ..... </button>
           <div className={style.info_photo}>
             <Image
               className={style.photo}
@@ -65,29 +66,29 @@ export const SectionReviews = () => {
               alt={'Photo reviews'}
             />
           </div>
-          <div className={style.bottom}>
-            <div className={style.counter}>
-              <span className={style.number}>{currentIndex + 1}</span>
-              <span className={style.line}>|</span>
-              <span className={style.all}>{reviews.length}</span>
-            </div>
-            <div className={style.arrows}>
-              <Image
-                onClick={currentIndex !== 0 ? previousReview : undefined}
-                src={arrow}
-                alt={'arrow'}
-                className={style.arrow_left}
-              />
-              <Image
-                onClick={
-                  currentIndex !== reviews.length - 1 ? nextReview : undefined
-                }
-                src={arrow}
-                alt={'arrow'}
-                className={style.arrow_right}
-              />
-            </div>
-          </div>
+        </div>
+      </div>
+      <div className={style.bottom}>
+        <div className={style.counter}>
+          <span className={style.number}>{currentIndex + 1}</span>
+          <span className={style.line}>|</span>
+          <span className={style.all}>{reviews.length}</span>
+        </div>
+        <div className={style.arrows}>
+          <Image
+            onClick={currentIndex !== 0 ? previousReview : undefined}
+            src={arrow}
+            alt={'arrow'}
+            className={style.arrow_left}
+          />
+          <Image
+            onClick={
+              currentIndex !== reviews.length - 1 ? nextReview : undefined
+            }
+            src={arrow}
+            alt={'arrow'}
+            className={style.arrow_right}
+          />
         </div>
       </div>
     </Section>

@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="688969f8-db23-43c8-934e-4b2df8177625" name="Changes" comment="refactor: merged with main">
-      <change afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-reviews/model/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-reviews/model/data.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-reviews/model/photo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-reviews/ui/assets/arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-reviews/ui/assets/star.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-reviews/ui/section-reviews.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-reviews/ui/section-reviews.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-reviews/ui/section-reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-reviews/ui/section-reviews.tsx" afterDir="false" />
