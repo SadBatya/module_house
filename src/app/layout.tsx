@@ -3,6 +3,8 @@ import { Poppins, Inter } from 'next/font/google';
 import './globals.scss';
 import { Header } from '@/widgets/Header/Header';
 import { Footer } from '@/widgets/Footer/Footer';
+import { ModalProvider } from '@/shared/lib/modal-context';
+import { ModalForm } from '@/widgets';
 
 const poppins = Poppins({
   variable: '--font-poppins',
@@ -30,9 +32,12 @@ export default function RootLayout({
     <html lang="ru">
       <body className={`${poppins.variable} ${inter.variable}`}>
         <div id="root">
-          <Header />
-          {children}
-          <Footer />
+          <ModalProvider>
+            <Header />
+            {children}
+            <ModalForm />
+            <Footer />
+          </ModalProvider>
         </div>
       </body>
     </html>
