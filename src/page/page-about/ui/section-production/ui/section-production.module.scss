@@ -1,5 +1,7 @@
-.black {
-  color: #000000 !important;
+.top_title {
+  .black {
+    color: #000000;
+  }
 }
 
 .container {
@@ -61,5 +63,10 @@
         transition: 1s;
       }
     }
+  }
+}
+
+@media (max-width: 48rem) {
+  .top_title {
   }
 }

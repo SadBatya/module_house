@@ -6,7 +6,7 @@ import { Span } from '@/shared/ui/Span/Span';
 
 export const SectionProduction = () => (
   <Section>
-    <Title uppercase>
+    <Title uppercase className={style.top_title}>
       <Span className={style.black}>Наше</Span> <Span>производство</Span>
     </Title>
     <div className={style.container}>
