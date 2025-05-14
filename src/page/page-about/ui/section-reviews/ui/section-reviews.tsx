@@ -37,27 +37,32 @@ export const SectionReviews = () => {
       </div>
       <div className={style.main_card_section}>
         <div className={style.card_section}>
-          <div className={style.info_text}>
-            {[...Array(currentReview.rating)].map((el, index) => (
-              <Image
-                key={index}
-                src={star}
-                alt={'Rate'}
-                className={style.star}
-              />
-            ))}
+          <div className={style.container}>
+            <div className={style.star}>
+              {[...Array(currentReview.rating)].map((el, index) => (
+                <Image
+                  key={index}
+                  src={star}
+                  alt={'Rate'}
+                  className={style.star}
+                />
+              ))}
+            </div>
             <Image
               className={style.avatar}
               alt={'Avatarka'}
               src={currentReview.avatar}
             />
+          </div>
+
+          <div className={style.info_text}>
             <div className={style.name_date}>
               <span className={style.name}>{currentReview.username}</span>
               <span className={style.date}>{currentReview.date}</span>
             </div>
             <p className={style.text_review}>{currentReview.review}</p>
           </div>
-          <button className={style.button_text}>Читать далее ..... </button>
+          <button className={style.button_text}>Читать далее .....</button>
           <div className={style.info_photo}>
             <Image
               className={style.photo}
