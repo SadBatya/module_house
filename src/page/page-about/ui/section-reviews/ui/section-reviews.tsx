@@ -46,17 +46,16 @@ export const SectionReviews = () => {
                 className={style.star}
               />
             ))}
-            <div className={style.name_date}>
-              <span className={style.name}>{currentReview.username}</span>
-              <span className={style.date}>{currentReview.date}</span>
-            </div>
-            <p className={style.text_review}>{currentReview.review}</p>
-
             <Image
               className={style.avatar}
               alt={'Avatarka'}
               src={currentReview.avatar}
             />
+            <div className={style.name_date}>
+              <span className={style.name}>{currentReview.username}</span>
+              <span className={style.date}>{currentReview.date}</span>
+            </div>
+            <p className={style.text_review}>{currentReview.review}</p>
           </div>
           <button className={style.button_text}>Читать далее ..... </button>
           <div className={style.info_photo}>

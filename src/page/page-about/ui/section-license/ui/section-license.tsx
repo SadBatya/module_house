@@ -12,7 +12,7 @@ export const SectionLicense = () => {
   return (
     <Section className={style.section}>
       <Title uppercase className={style.title}>
-        <Span>ЛиЦЕНЗИИ </Span> И ГОСТ
+        <Span>ЛиЦЕНЗИИ </Span> <Span className={style.black}>И ГОСТ</Span>
       </Title>
       <Swiper
         spaceBetween={20}

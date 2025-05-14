@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="688969f8-db23-43c8-934e-4b2df8177625" name="Changes" comment="refactor: merged with main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-license/ui/section-license.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-license/ui/section-license.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-license/ui/section-license.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-license/ui/section-license.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-production/ui/section-production.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-production/ui/section-production.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-production/ui/section-production.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-production/ui/section-production.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-reviews/ui/section-reviews.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-reviews/ui/section-reviews.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page-about/ui/section-reviews/ui/section-reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page-about/ui/section-reviews/ui/section-reviews.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

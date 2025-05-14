@@ -6,8 +6,8 @@ import { Span } from '@/shared/ui/Span/Span';
 
 export const SectionProduction = () => (
   <Section>
-    <Title uppercase className={style.title}>
-      Наше <Span>производство</Span>
+    <Title uppercase>
+      <Span className={style.black}>Наше</Span> <Span>производство</Span>
     </Title>
     <div className={style.container}>
       {cardData.map(({ title, img, text }, index) => (
