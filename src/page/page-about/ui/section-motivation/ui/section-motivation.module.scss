@@ -1,0 +1,30 @@
+.title {
+  line-height: 120%;
+
+  .titleBlock {
+    margin-bottom: 1.5rem;
+  }
+  .black {
+    color: $black;
+    font-size: 5rem;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+
+  @include breakpoint(desktop) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .text {
+    flex: 1;
+    color: $black;
+    font-weight: 400;
+    font-size: 1.6rem;
+    opacity: 100%;
+  }
+}

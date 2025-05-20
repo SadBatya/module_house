@@ -1,0 +1,72 @@
+.top_title {
+  .black {
+    color: #000000;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  .imgContainer {
+    position: relative;
+    background-color: black;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    .img {
+      opacity: 0.5;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 2/1.6;
+      object-fit: cover;
+
+      transform: scale(1);
+      transition: all 0.5s;
+      position: relative;
+    }
+    .title {
+      color: white;
+      font-size: 2rem;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.8;
+      transition: all 0.5s;
+    }
+    .text {
+      z-index: 1;
+      max-width: 50rem;
+      opacity: 0;
+      position: absolute;
+      color: white;
+      font-weight: normal;
+      font-size: 2rem;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:hover {
+      .img {
+        opacity: 0.5;
+        transform: scale(1.05);
+      }
+      .title {
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 1;
+      }
+      .text {
+        opacity: 1;
+        transition: 1s;
+      }
+    }
+  }
+}
+
+@media (max-width: 48rem) {
+  .top_title {
+  }
+}
